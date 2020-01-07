@@ -6,9 +6,11 @@
   "main": "server.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy":"gh-page -d build",
+    "deploy": "gh-page -d build",
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "hamid",
   "license": "MIT",
@@ -21,6 +23,7 @@
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.3",
+    "redux-thunk": "^2.3.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
