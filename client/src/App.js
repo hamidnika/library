@@ -11,8 +11,12 @@ import EditProfile from './components/profile-forms/EditProfile';
 import AddExperience from './components/profile-forms/AddExperience';
 import AddEducation from './components/profile-forms/AddEducation';
 import PrivateRoute from './components/routing/PrivateRoute';
-// Redux
+import Nav from "./components/Nav";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
+import NoMatch from "./pages/NoMatch";
 
+// Redux
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadUser } from './actions/auth';
@@ -32,12 +36,22 @@ const App = () => {
   }, []);
 
 
-  return (
-<Provider store={store}>
+  return ( 
+<Provider store={store}>  
 <Router>
+<Fragment>
+<Nav /> 
+  <Switch>
+<PrivateRoute exact path="/search" component={Search} />
+<PrivateRoute exact path="/saved" component={Saved} />
+<Route component={NoMatch} /> 
+</Switch>
+</Fragment>
+
 <Fragment>
 <Navbar/>
 <Route exact path='/' component={Landing} />
+
   <section className="container">
    <Alert /> 
    <Switch>
