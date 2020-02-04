@@ -3,9 +3,10 @@ import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profile';
+//import FileUpload from './FileUpload';
 
 const CreateProfile = ({ createProfile, history }) => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({ 
     company: '',
     website: '',
     location: '',
@@ -54,8 +55,10 @@ const CreateProfile = ({ createProfile, history }) => {
         <i className="fas fa-user"></i> Let's get some information to make your
         profile stand out
       </p>
+     
       <small>* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
+
         <div className="form-group">
           <select name="status" value={status} onChange={e => onChange(e)}>
             <option value="0">* Select Professional Status</option>

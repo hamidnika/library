@@ -81,8 +81,7 @@ class Search extends Component {
       <Container>
         <Row>
           <div className="col rounded text-center bg-info mt-4 p-4">
-            <h1>Library Builder</h1>
-            <h4>Search for and save books of interest!</h4>
+            <h1>Search and save books from google!</h1>
           </div>
         </Row>
         <Row>

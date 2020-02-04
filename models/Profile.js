@@ -4,6 +4,9 @@ const ProfileSchema = new mongoose.Schema({
      type: mongoose.Schema.Types.ObjectId,
      ref: 'user'
  },
+ profileImg: {
+    type: String
+},
  company: {
      type: String
  },

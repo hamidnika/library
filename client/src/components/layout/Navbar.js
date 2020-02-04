@@ -6,7 +6,11 @@ import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
-      <ul>
+      <ul className="navbar-collapse">
+         <li className="btn-outline-warning">
+      <Link to="/home">Home</Link>
+      </li>
+       
       <li>
         <Link to="/saved">
         <i className="fas fa-user" />{' '}
@@ -26,7 +30,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
 
-      <li></li>
       <li>
         <a onClick={logout} href="#!">
          <i className="fas fa-sign-out-alt" />{' '}
@@ -37,26 +40,25 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     );
 
     const guestLinks = (
-      <ul>
-      {/* <li className="btn-outline-success">
-        <a href="#!">Members</a>
-      </li> */}
+      <ul class="nav navbar-collapse">
+         <li className="btn-outline-warning">
+      <Link to="/home">Home</Link>
+      </li>
       <li className="btn-outline-warning">
         <Link to="/register">Register</Link>
       </li>
       <li className="btn-outline-warning">
         <Link to="/login">Login</Link>
       </li>
+      <li className="btn-outline-warning">
+      <Link to="/">Welcome Page</Link>
+      </li>
+     
     </ul>
     );
 
     return (
     <nav className="navbar bg-info">
-      <h1 className="btn-outline-warning">
-        <Link to="/">
-        Home
-        </Link>
-      </h1>
     { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks } </Fragment>) } 
     </nav>
     )
