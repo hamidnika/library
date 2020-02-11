@@ -11,15 +11,15 @@ const Landing = ({ isAuthenticated }) => {
         <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
-          <h1 className="x-large">Members Collection</h1>
-          <p className="lead">
-            Create profile/portfolio, share posts and use library
+          <h3 className="large text-warning">Become Member of Association</h3>
+          <p className="lead text-warning">
+            Welcome to Booklook
           </p>
-          <div className="buttons">
-            <Link to="/register" className="btn btn-primary">
-              Sign Up
+          <div>
+            <Link to="/register" className="btn bg-dark text-white">
+              Register
             </Link>
-            <Link to="/login" className="btn btn-light">Login</Link>
+            <Link to="/login" className="btn bg-dark text-white">Login</Link>
           </div>
         </div>
       </div>

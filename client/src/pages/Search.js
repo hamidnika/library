@@ -80,16 +80,10 @@ class Search extends Component {
     return (
       <Container>
         <Row>
-          <div className="col rounded text-center bg-info mt-4 p-4">
-            <h1>Search and save books from google!</h1>
-          </div>
-        </Row>
-        <Row>
-          <div className="col rounded bg-dark mb-4 mt-4 p-4">
-            <h4>Book Search</h4>
+          <div className="col-md-4 rounded bg-dark p-5">
+            <h4>Search and save books from google!</h4>
             <form>
               <div className="form-group">
-                <label htmlFor="bookSearch">Book</label>
                 <input
                   type="text"
                   className="form-control"
@@ -99,19 +93,19 @@ class Search extends Component {
                   onChange={this.handleInputChange} />
               </div>
               <Button onClick={this.handleFormSubmit}>Search</Button>
-              <img className="ml-3" src="https://wallpapermemory.com/uploads/480/library-background-hd-1366x768-74756.jpg" alt="Powered by Google" />
+
+              <div className="ml-3 h" style={{height: this.state.books.length*112}} onChange={this.handleInputChange}></div>
             </form>
           </div>
-        </Row>
-        <Row>
-          <div className="col border border-rounded p-3 mb-4">
+          <div className="col-md-8 border border-rounded bg-secondary p-3 mb-4">
             {this.state.searched === "" ? (
-            <h4>Results</h4>
+            <h4  className="text-white">Results</h4>
+            
             ) : (
-              <h4>Results for {this.state.searched}</h4>
+              <h4 className="bg-dark text-warning">Results for {this.state.searched}</h4>
             )}
             {!this.state.books.length ? (
-              <h6 className="text-center">No books to display currently</h6>
+              <h6 className="text-center text-white">No books to display currently</h6>
             ) : (
                 <BookList>
                   {this.state.books.map(book => {

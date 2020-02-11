@@ -36,13 +36,8 @@ class Saved extends Component {
     return (
       <Container>
         <Row>
-          <div className="col rounded text-center bg-success mt-4 mb-4 p-4">
-            <h1>Saved Books</h1>
-            <img className="ml-3" src="https://wallpapermemory.com/uploads/480/library-background-hd-1366x768-74756.jpg" alt="Powered by Google" />
-          </div>
-        </Row>
-        <Row>
-          <div className="col border border-rounded p-3 mb-4">
+          <div className="col-md-12 border border-rounded p-3 mb-2 bg-secondary">
+          <h3 className="col-md-12 rounded bg-dark text-warning p-2">Saved Books</h3>
             {!this.state.savedBooks.length ? (
               <h6 className="text-center">No books to display currently</h6>
             ) : (

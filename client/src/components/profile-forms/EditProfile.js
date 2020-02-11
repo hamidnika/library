@@ -76,9 +76,9 @@ const EditProfile = ({
      
         <Fragment>
  
-          <h1 className="large text-primary">
+          <h3 className="text-primary">
         Create Your Profile
-      </h1>
+      </h3>
       <p className="lead">
         <i className="fas fa-user"></i> some information for your
         profile

@@ -24,12 +24,8 @@ const AddExperience = ({ addExperience, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Add An Experience</h1>
-      <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any developer/programming positions
-        that you have had in the past
-      </p>
-      <small>* = required field</small>
+      <h3 className='bg-dark text-warning'>Add your Experiences</h3>
+      <small className="bg-dark text-warning">* = required field</small>
       <form
         className='form'
         onSubmit={e => {
@@ -60,14 +56,14 @@ const AddExperience = ({ addExperience, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='Location'
+            placeholder='City'
             name='location'
             value={location}
             onChange={e => onChange(e)}
           />
         </div>
         <div className='form-group'>
-          <h4>From Date</h4>
+          <h5 className="bg-dark text-warning">From Date</h5>
           <input
             type='date'
             name='from'
@@ -76,7 +72,7 @@ const AddExperience = ({ addExperience, history }) => {
           />
         </div>
         <div className='form-group'>
-          <p>
+          <p className="bg-dark text-warning">
             <input
               type='checkbox'
               name='current'
@@ -91,7 +87,7 @@ const AddExperience = ({ addExperience, history }) => {
           </p>
         </div>
         <div className='form-group'>
-          <h4>To Date</h4>
+          <h5 className="bg-dark text-warning">To Date</h5>
           <input
             type='date'
             name='to'
@@ -110,8 +106,8 @@ const AddExperience = ({ addExperience, history }) => {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn btn-primary my-1' />
-        <Link className='btn btn-light my-1' to='/dashboard'>
+        <input type='submit' className='btn bg-dark text-warning my-1' />
+        <Link className='btn bg-warning text-dark my-1' to='/dashboard'>
           Go Back
         </Link>
       </form>

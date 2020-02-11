@@ -24,23 +24,6 @@ const onSubmit = async e => {
    setAlert('Passwords do not match', 'danger');
   } else {
    register({ name, email, password});
-   /* const newUser = {
-     name,
-     email,
-     password
-   }
-   try {
-     const config = {
-       headers: {
-         'Content-Type': 'application/json'
-       }
-     }
-    const body = JSON.stringify(newUser);
-    const res = await axios.post('/api/users', body, config);
-    console.log(res.data)
-   } catch (err) {
-     console.error(err.response.data);
-   }  */
   }
 };
 
@@ -49,8 +32,8 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <h1 className="large text-primary">Sign Up</h1>
-      <p className="lead">
+      <h4 className="text-warning bg-dark">Register</h4>
+      <p className="text-warning bg-dark">
         <i className="fas fa-user" /> Create Your Account
       </p>
       <form className="form" onSubmit={e => onSubmit(e)}>
@@ -71,10 +54,6 @@ if(isAuthenticated) {
           value={email} 
           onChange={e => onChange(e)}
           />
-          <small className="form-text"
-            >This site uses Gravatar so if you want a profile image, use a
-            Gravatar email
-          </small>
         </div>
         <div className="form-group">
           <input
@@ -94,10 +73,10 @@ if(isAuthenticated) {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type="submit" className="btn btn-primary" value="Register" />
+        <input type="submit" className="btn text-warning bg-dark" value="Register" />
       </form>
-      <p className="my-1">
-        Already have an account? <Link to="/login">Sign In</Link>
+      <p className="text-warning bg-dark mt-1">
+        Already have an account? <Link className="text-white bg-dark" to="/login">Login</Link>
       </p> 
     </Fragment>
     )

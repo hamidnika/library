@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -6,41 +6,42 @@ import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
-      <ul className="navbar-collapse">
+      <ul className="nav navbar-collapse">
+        <img src={require('./persian.jpg')} style={{height:60, width:200}} alt="pic"/>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
        
       <li>
         <Link to="/saved">
-        <i className="fas fa-user" />{' '}
-        <span className="hide-sm">Saved Books</span>
+        <span>Saved Books</span>
         </Link>
       </li>
       <li>
         <Link to="/search">
-        <i className="fas fa-user" />{' '}
-        <span className="hide-sm">Search Library</span>
+        <span>Search Library</span>
         </Link>
       </li>
       <li>
         <Link to="/dashboard">
-        <i className="fas fa-user" />{' '}
-        <span className="hide-sm">Dashboard</span>
+        <i className="fas fa-user" />
+        <span>Dashboard</span>
         </Link>
       </li>
 
       <li>
-        <a onClick={logout} href="#!">
-         <i className="fas fa-sign-out-alt" />{' '}
-          <span className="hide-sm">Logout</span>
-        </a>
+        <Link onClick={logout} to="/home">
+         <i className="fas fa-sign-out-alt" />
+          <span>Logout</span>
+        </Link>
       </li>
     </ul>
     );
 
     const guestLinks = (
-      <ul class="nav navbar-collapse">
+
+      <ul className="nav navbar-collapse">
+<img src={require('./persian.jpg')} style={{height:70, width:200}} alt="pic1"/>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
@@ -53,12 +54,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <li className="btn-outline-warning">
       <Link to="/">Welcome Page</Link>
       </li>
-     
     </ul>
     );
 
     return (
-    <nav className="navbar bg-info">
+    <nav className="navbar bg-dark">
     { !loading && (<Fragment>{ isAuthenticated ? authLinks : guestLinks } </Fragment>) } 
     </nav>
     )

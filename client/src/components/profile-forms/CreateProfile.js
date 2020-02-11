@@ -48,15 +48,15 @@ const CreateProfile = ({ createProfile, history }) => {
 
     return (
         <Fragment>
-          <h1 className="large text-primary">
+          <h3 className="text-warning bg-dark">
         Create Your Profile
-      </h1>
-      <p className="lead">
-        <i className="fas fa-user"></i> Let's get some information to make your
-        profile stand out
+      </h3>
+      <p className="lead text-warning bg-dark">
+        <i className="fas fa-user"></i> some information for your
+        profile
       </p>
      
-      <small>* = required field</small>
+      <small className="text-white bg-dark">* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
 
         <div className="form-group">
@@ -71,35 +71,34 @@ const CreateProfile = ({ createProfile, history }) => {
             <option value="Intern">Intern</option>
             <option value="Other">Other</option>
           </select>
-          <small className="form-text"
-            >Give us an idea of where you are at in your career</small
-          >
+          <small className="form-text text-white bg-dark"
+            >Status of Your Job or Education</small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="Company" name="company" value={company}
            onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-white bg-dark"
             >Could be your own company or one you work for</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website}
           onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-white bg-dark"
             >Could be your own or a company website</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location}
            onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-white bg-dark"
             >City & state suggested (eg. Boston, MA)</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills}
            onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-white bg-dark"
             >Please use comma separated values (eg.
             HTML,CSS,JavaScript,PHP)</small
           >
@@ -112,22 +111,20 @@ const CreateProfile = ({ createProfile, history }) => {
             value={githubusername}
            onChange={e => onChange(e)}
           />
-          <small className="form-text"
-            >If you want your latest repos and a Github link, include your
-            username</small
-          >
+          <small className="form-text text-white bg-dark">your
+          Github username</small>
         </div>
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={bio}
            onChange={e => onChange(e)}></textarea>
-          <small class="form-text">Tell us a little about yourself</small>
+          <small class="form-text text-white bg-dark">Tell us a little about yourself</small>
         </div>
 
-        <div className="my-2">
-          <button onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button" className="btn btn-light">
-            Add Social Network Links
+        <div>
+          <button className="btn-dark text-warning my-2" onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button">
+          Add Social Network Links
           </button>
-          <span>Optional</span>
+          <span className="text-white bg-dark">Optional</span>
         </div>
         {displaySocialInputs && <Fragment>
             <div className="form-group social-input">
@@ -162,8 +159,8 @@ const CreateProfile = ({ createProfile, history }) => {
         
         </Fragment>}
         
-        <input type="submit" className="btn btn-primary my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type="submit" className="btn btn-dark text-warning my-2" />
+        <Link className="btn btn-dark my-1" to="/dashboard">
         Go Back
         </Link>
       </form>  

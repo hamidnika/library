@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/library/static/css/main.357c05ab.chunk.css",
+    "main.js": "/library/static/js/main.d4eab6b3.chunk.js",
+    "main.js.map": "/library/static/js/main.d4eab6b3.chunk.js.map",
+    "runtime-main.js": "/library/static/js/runtime-main.0660d207.js",
+    "runtime-main.js.map": "/library/static/js/runtime-main.0660d207.js.map",
+    "static/js/2.6e691b39.chunk.js": "/library/static/js/2.6e691b39.chunk.js",
+    "static/js/2.6e691b39.chunk.js.map": "/library/static/js/2.6e691b39.chunk.js.map",
+    "index.html": "/library/index.html",
+    "precache-manifest.fa3472a9f364179e122dd2de4b74be9a.js": "/library/precache-manifest.fa3472a9f364179e122dd2de4b74be9a.js",
+    "service-worker.js": "/library/service-worker.js",
+    "static/css/main.357c05ab.chunk.css.map": "/library/static/css/main.357c05ab.chunk.css.map",
+    "static/js/2.6e691b39.chunk.js.LICENSE": "/library/static/js/2.6e691b39.chunk.js.LICENSE",
+    "static/media/associations.jpg": "/library/static/media/associations.3793c22f.jpg",
+    "static/media/App.css": "/library/static/media/showcase.3f6ed9e5.jpg",
+    "static/media/persian.jpg": "/library/static/media/persian.5a5c5f1f.jpg",
+    "static/media/spinner.gif": "/library/static/media/spinner.8f400896.gif",
+    "static/media/tehhr.jpg": "/library/static/media/tehhr.a0d916a9.jpg",
+    "static/media/tehra.jpg": "/library/static/media/tehra.2d734706.jpg",
+    "static/media/tehran.jpg": "/library/static/media/tehran.3f6ed9e5.jpg",
+    "static/media/tehri.jpg": "/library/static/media/tehri.babe66e3.jpg",
+    "static/media/tehrran.jpg": "/library/static/media/tehrran.7b09ce80.jpg",
+    "static/media/tteh.jpg": "/library/static/media/tteh.89cb7cf1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0660d207.js",
+    "static/js/2.6e691b39.chunk.js",
+    "static/css/main.357c05ab.chunk.css",
+    "static/js/main.d4eab6b3.chunk.js"
+  ]
+}

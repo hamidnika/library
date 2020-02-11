@@ -32,12 +32,8 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Add Your Education</h1>
-      <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any school or bootcamp that you
-        have attended
-      </p>
-      <small>* = required field</small>
+      <h3 className='bg-dark text-warning'>Add Your Education</h3>
+      <small className="bg-dark text-warning">* = required field</small>
       <form
         className='form'
         onSubmit={e => {
@@ -48,7 +44,7 @@ const AddEducation = ({ addEducation, history }) => {
         <div className='form-group'>
           <input
             type='text'
-            placeholder='* School or Bootcamp'
+            placeholder='* School or university'
             name='school'
             value={school}
             onChange={e => onChange(e)}
@@ -75,7 +71,7 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <div className='form-group'>
-          <h4>From Date</h4>
+          <h5 className="bg-dark text-warning">From Date</h5>
           <input
             type='date'
             name='from'
@@ -84,8 +80,9 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <div className='form-group'>
-          <p>
+          <p className="bg-dark text-warning">
             <input
+              className="bg-dark text-warning"
               type='checkbox'
               name='current'
               checked={current}
@@ -99,7 +96,7 @@ const AddEducation = ({ addEducation, history }) => {
           </p>
         </div>
         <div className='form-group'>
-          <h4>To Date</h4>
+          <h5 className="bg-dark text-warning">To Date</h5>
           <input
             type='date'
             name='to'
@@ -118,8 +115,8 @@ const AddEducation = ({ addEducation, history }) => {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn btn-primary my-1' />
-        <Link className='btn btn-light my-1' to='/dashboard'>
+        <input type='submit' className='btn bg-dark text-warning my-1' />
+        <Link className='btn bg-warning text-dark my-1' to='/dashboard'>
           Go Back
         </Link>
       </form>

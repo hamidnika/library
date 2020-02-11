@@ -12,8 +12,7 @@ import EditProfile from './components/profile-forms/EditProfile';
 import AddExperience from './components/profile-forms/AddExperience';
 import AddEducation from './components/profile-forms/AddEducation';
 import PrivateRoute from './components/routing/PrivateRoute';
-
-
+import Nav from './components/Nav';
 //import Nav from "./components/Nav";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
@@ -44,11 +43,10 @@ const App = () => {
 <Router>
 <Fragment>
      <Navbar/>
-    
-  <section className="container">
+  <div className="hi"> 
+  <section className="container m-6">
      <Alert /> 
     <Switch>
-    
      <Route exact path='/' component={Landing} />
      <Route exact path='/home' component={Home} />
      <Route exact path='/register' component={Register} />
@@ -61,7 +59,11 @@ const App = () => {
      <PrivateRoute exact path="/search" component={Search} />
      <PrivateRoute exact path="/saved" component={Saved} />
   </Switch>
+ 
   </section>
+
+  <Nav/>
+  </div> 
  </Fragment>
  </Router>
  </Provider>
