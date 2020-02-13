@@ -9,7 +9,7 @@ export default class Nav extends Component {
 
   <div className="container">
     <div className="row">
-      <div className="col-md-12 py-2 mb-5 flex-center pt-5">
+      <div className="col-md-12 py-2 mb-4 flex-center text-center pt-5 footer-h">
 
   
           <a className="fb-ic text-white" href="https://www.facebook.com/hamid.nikou.58">
@@ -50,7 +50,7 @@ export default class Nav extends Component {
 
   </div>
 
-  <div className="footer-copyright text-center py-5">© 2020 Copyright:
+  <div className="text-center py-2">© 2020 Copyright:
     <a className="text-warning middle" href="www.booklook.com"> booklook.com</a>
   </div>
  

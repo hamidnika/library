@@ -790,7 +790,6 @@ button {
 .aboutasso {
   background-color: #d897c2;
   color: black;
-  opacity: 0.9;
 }
 .assotilte{
   background-color:purple;
@@ -800,6 +799,16 @@ button {
   box-shadow: -6px 6px 19px 2px #6f5858;
 }
 
+.responsive {
+  height: 280px;
+  width: 400px;
+}
 
+.respons {
+  height: auto;
+  width: 105%;
+}
 
-
+.footer-h {
+  height: 40px;
+}

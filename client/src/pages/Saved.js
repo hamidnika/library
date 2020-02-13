@@ -39,7 +39,7 @@ class Saved extends Component {
           <div className="col-md-12 border border-rounded p-3 mb-2 bg-secondary">
           <h3 className="col-md-12 rounded bg-dark text-warning p-2">Saved Books</h3>
             {!this.state.savedBooks.length ? (
-              <h6 className="text-center">No books to display currently</h6>
+              <h6 className="text-center text-white">No books to display currently</h6>
             ) : (
                 <BookList>
                   {this.state.savedBooks.map(book => {
