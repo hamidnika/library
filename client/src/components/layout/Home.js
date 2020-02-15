@@ -7,7 +7,7 @@ export default class Home extends Component {
         return ( 
         <div> 
         <Homepart/>
-        <div className="row">
+        <div className="row p-3">
         <div className="col-md-6">
           <div className="card">
             <div className="card-body row respons aboutasso">

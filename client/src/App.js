@@ -40,9 +40,9 @@ const App = () => {
 
   return ( 
 <Provider store={store}>  
-<Router>
-<Fragment>
-     <Navbar/>
+<Router >
+<Fragment className="hi">
+     <Navbar className="navbar"/>
   <div className="hi"> 
   <section className="container m-6">
      <Alert /> 

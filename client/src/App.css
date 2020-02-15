@@ -678,6 +678,10 @@ button {
 .hi {
   background-image: url("../src/img/lib.jpg");
   opacity: 0.8;
+  padding-top: 30px;
+  background-repeat:repeat;
+  background-attachment:fixed;
+
 }
 .h {
   background-image: url("../src/img/persians.jpg");
@@ -812,3 +816,37 @@ button {
 .footer-h {
   height: 40px;
 }
+
+.navbar {
+  height: 106px;
+  padding: 0px;
+  font-weight: 600;
+  background-color:transparent;
+}
+ 
+
+.font_meie_script {
+  font-family: 'Meie Script', cursive;
+  font-size: 80px;
+  color:yellow;
+  background-color:transparent;
+  padding: 8px;
+}
+
+.font_shadows_into_light {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.font_arvo {
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.font_monda {
+  font-family: 'Monda', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
