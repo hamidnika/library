@@ -22,10 +22,10 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <h4 className='text-warning bg-dark'>Information about Members</h4>
-      <p className='text-warning bg-dark'>
+      <h4 className='text-white bg-info'>Information about Members</h4>
+      <h4 className='text-white bg-info '>
         <i className='fas fa-user' /> Welcome {user && user.name}
-      </p>
+      </h4>
       {profile !== null ? (
         <Fragment>
           <DashboardActions />

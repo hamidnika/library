@@ -7,7 +7,7 @@ import { deleteEducation } from '../../actions/profile';
 
 const Education = ({ education, deleteEducation }) => {
   const educations = education.map(edu => (
-    <tr key={edu._id}>
+    <tr className="bg-secondary text-white" key={edu._id}>
       <td>{edu.school}</td>
       <td className="hide-sm">{edu.degree}</td>
       <td>
@@ -21,7 +21,7 @@ const Education = ({ education, deleteEducation }) => {
       <td>
         <button
           onClick={() => deleteEducation(edu._id)}
-          className="btn btn-danger"
+          className="btn bg-warning text-danger"
         >
           Delete
         </button>
@@ -31,11 +31,11 @@ const Education = ({ education, deleteEducation }) => {
 
   return (
     <Fragment>
-      <h2 className="my-2">Education Credentials</h2>
+      <h3 className="my-2 bg-info text-white">Education Credentials</h3>
       <table className="table">
         <thead>
           <tr>
-            <th>School</th>
+            <th>School/University</th>
             <th className="hide-sm">Degree</th>
             <th className="hide-sm">Years</th>
             <th />

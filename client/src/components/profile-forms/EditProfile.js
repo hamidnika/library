@@ -76,13 +76,9 @@ const EditProfile = ({
      
         <Fragment>
  
-          <h3 className="text-primary">
-        Create Your Profile
+          <h3 className="text-warning bg-dark">
+        Edit your Profile
       </h3>
-      <p className="lead">
-        <i className="fas fa-user"></i> some information for your
-        profile
-      </p>
 
       <small>* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
@@ -99,33 +95,32 @@ const EditProfile = ({
             <option value="Intern">Intern</option>
             <option value="Other">Other</option>
           </select>
-          <small className="form-text"
-            >Give us an idea of where you are at in your career</small>
+          <small className="form-text text-warning bg-dark"
+            >what is your your job</small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="Company" name="company" value={company} onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-warning bg-dark"
             >Could be your own company or one you work for</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website}
           onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-warning bg-dark"
             >Could be your own or a company website</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location}
            onChange={e => onChange(e)}/>
-          <small className="form-text"
-            >City & state suggested</small
-          >
+          <small className="form-text text-warning bg-dark"
+            >City </small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills}
            onChange={e => onChange(e)}/>
-          <small className="form-text"
+          <small className="form-text text-warning bg-dark"
             >Please use comma separated values (eg.
             HTML,CSS,JavaScript,PHP)</small
           >
@@ -138,7 +133,7 @@ const EditProfile = ({
             value={githubusername}
            onChange={e => onChange(e)}
           />
-          <small className="form-text"
+          <small className="form-text text-warning bg-dark"
             >If you want your latest repos and a Github link, include your
             username</small
           >
@@ -146,7 +141,7 @@ const EditProfile = ({
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={bio}
            onChange={e => onChange(e)}></textarea>
-          <small class="form-text">Tell us a little about yourself</small>
+          <small class="form-text text-warning bg-dark">Tell us a little about yourself</small>
         </div>
 
         <div className="my-2">
