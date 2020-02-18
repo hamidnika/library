@@ -31,7 +31,7 @@ export default class Home extends Component {
 <div className="card bg-secondary">
   <div className="card-body">
   <a href="http://hamid88.herokuapp.com/about.html" className="btn btn-dark text-warning">Go to Chatrooms</a>
-    <h5 className="card-title bg-secondary text-warning">We Will have Here Live Streaming</h5>
+    <h5 className="card-title bg-secondary text-warning p-2 text-center">We Will have Here Live Streaming</h5>
    
     <iframe title="my video" className="img-fluid responsive" width="604" height="453" src="https://www.youtube.com/embed/s1-foVKep2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    

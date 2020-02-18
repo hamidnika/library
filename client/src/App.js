@@ -41,7 +41,7 @@ const App = () => {
   return ( 
 <Provider store={store}>  
 <Router >
-<Fragment className="hi">
+<Fragment>
      <Navbar className="navbar"/>
   <div className="hi"> 
   <section className="container m-6">

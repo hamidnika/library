@@ -8,9 +8,9 @@ import { deleteEducation } from '../../actions/profile';
 const Education = ({ education, deleteEducation }) => {
   const educations = education.map(edu => (
     <tr className="bg-secondary text-white" key={edu._id}>
-      <td>{edu.school}</td>
-      <td className="hide-sm">{edu.degree}</td>
-      <td>
+      <td className="col">{edu.school}</td>
+      <td className="col">{edu.degree}</td>
+      <td className="col">
         <Moment format="YYYY/MM/DD">{moment.utc(edu.from)}</Moment> -{' '}
         {edu.to === null ? (
           ' Now'
@@ -31,14 +31,13 @@ const Education = ({ education, deleteEducation }) => {
 
   return (
     <Fragment>
-      <h3 className="my-2 bg-dark text-white">Education Background</h3>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>School/University</th>
-            <th className="hide-sm">Degree</th>
-            <th className="hide-sm">Years</th>
-            <th />
+      <h4 className="my-2 bg-dark text-white">Education Background</h4>
+      <table className="table-responsive">
+        <thead >
+          <tr >
+            <th className="bg-white col">School/University</th>
+            <th className="bg-white text-dark col">Degree</th>
+            <th className="bg-white text-dark col">Years</th>
           </tr>
         </thead>
         <tbody>{educations}</tbody>

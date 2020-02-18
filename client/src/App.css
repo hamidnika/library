@@ -679,9 +679,12 @@ button {
   background-image: url("../src/img/lib.jpg");
   opacity: 0.8;
   padding-top: 30px;
-  background-repeat:repeat;
+  background-repeat:no-repeat;
   background-attachment:fixed;
-
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-position: center;
 }
 .h {
   background-image: url("../src/img/persians.jpg");

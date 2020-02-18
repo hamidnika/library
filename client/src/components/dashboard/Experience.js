@@ -8,9 +8,9 @@ import { deleteExperience } from '../../actions/profile';
 const Experience = ({ experience, deleteExperience }) => {
   const experiences = experience.map(exp => (
     <tr className="bg-secondary text-white" key={exp._id}>
-      <td>{exp.company}</td>
-      <td className="hide-sm">{exp.title}</td>
-      <td>
+      <td className="col">{exp.company}</td>
+      <td className="col">{exp.title}</td>
+      <td className="col">
         <Moment format="YYYY/MM/DD">{moment.utc(exp.from)}</Moment> -{' '}
         {exp.to === null ? (
           ' Now'
@@ -18,27 +18,26 @@ const Experience = ({ experience, deleteExperience }) => {
           <Moment format="YYYY/MM/DD">{moment.utc(exp.to)}</Moment>
         )}
       </td>
-      <td>
+      <td className="col">
         <button
           onClick={() => deleteExperience(exp._id)}
           className="btn bg-warning text-danger"
-        >
+        ></button>
           Delete
-        </button>
+      
       </td>
     </tr>
   ));
 
   return (
     <Fragment>
-      <h3 className="my-2 bg-dark text-white">Experience Background</h3>
-      <table className="table">
-        <thead>
+      <h4 className="my-2 bg-dark text-white">Experience Background</h4>
+      <table className="table-responsive">
+        <thead >
           <tr>
-            <th>Company</th>
-            <th className="hide-sm">Title</th>
-            <th className="hide-sm">Years</th>
-            <th />
+            <th className="bg-white col">Company</th>
+            <th className="bg-white text-dark col">Title</th>
+            <th className="bg-white text-dark col">Years</th>
           </tr>
         </thead>
         <tbody>{experiences}</tbody>
