@@ -6,7 +6,7 @@ import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
-      <ul className="nav navbar-collapse bg-secondary">
+      <ul className="nav navbar-collapse bg-dark">
         
         <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
          <li className="btn-outline-warning">
@@ -40,7 +40,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
     const guestLinks = (
 
-      <ul className="nav navbar-collapse bg-secondary">
+      <ul className="nav navbar-collapse bg-dark">
 <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
