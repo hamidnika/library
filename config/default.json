@@ -1,6 +1,5 @@
 {
-    "mongoURI": "mongodb+srv://hamidniakan:376718989h@devconnector-n7j4l.mongodb.net/test?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubClientId": "07d068d894229f5ba997",
-    "githubSecret": "3c3018daaf28e79a176640406dbaf046732a541c"
+  "mongoURI":
+  "mongodb+srv://hamidniakan:376718989h@devconnector-n7j4l.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }

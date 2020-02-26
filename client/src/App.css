@@ -334,7 +334,7 @@ button {
 .landing {
   position: relative;
   background: url('./img/showcase.jpg') no-repeat center center/cover;
-  height: 100vh;
+  height: 600px;
 }
 
 .landing-inner {
@@ -677,7 +677,6 @@ button {
 
 .hi {
   background-image: url("../src/img/lib.jpg");
-  opacity: 0.8;
   padding-top: 30px;
   background-repeat:no-repeat;
   background-attachment:fixed;
@@ -849,6 +848,18 @@ button {
 
 .font_monda {
   font-family: 'Monda', sans-serif;
+}
+
+.n {
+/*   display: block;
+  margin: 300px auto; */
+ /*  border: 2px solid lime; */
+  animation: logo 65s linear infinite;
+}
+@keyframes logo 
+{
+      0% { transform:  rotateY(0deg); }
+      100% { transform:  rotateY(360deg); }
 }
 
 

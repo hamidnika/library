@@ -4,7 +4,6 @@ const apiRoutes = require("./routes/api-routes");
 const path = require("path");
 const app = express();
 
-var cors = require("cors");
 
 // express Connect Database
 connectDB();
@@ -24,7 +23,7 @@ app.get("/", (req, res) => res.send("API running"));
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
-app.use("/api/posts", require("./routes/api/posts"));
+
 
 
 

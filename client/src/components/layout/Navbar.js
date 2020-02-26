@@ -6,31 +6,30 @@ import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
-      <ul className="nav navbar-collapse">
+      <ul className="nav navbar-collapse bg-secondary">
         
-        <img src={require('./persian.jpg')} style={{height:60, width:350 }} alt="pic1"/>
+        <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
        
-      <li>
+      <li className="btn-outline-warning">
         <Link to="/saved">
         <span>Saved Books</span>
         </Link>
       </li>
-      <li>
+      <li className="btn-outline-warning">
         <Link to="/search">
         <span>Search Library</span>
         </Link>
       </li>
-      <li>
+      <li className="btn-outline-warning" >
         <Link to="/dashboard">
         <i className="fas fa-user" />
         <span>Dashboard</span>
         </Link>
       </li>
-
-      <li>
+      <li className="btn-outline-warning">
         <Link onClick={logout} to="/home">
          <i className="fas fa-sign-out-alt" />
           <span>Logout</span>
@@ -41,8 +40,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
     const guestLinks = (
 
-      <ul className="nav navbar-collapse">
-<img src={require('./persian.jpg')} style={{height:60, width:350 }} alt="pic1"/>
+      <ul className="nav navbar-collapse bg-secondary">
+<img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
