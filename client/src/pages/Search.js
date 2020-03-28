@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Container } from "../components/Grid";
+import { Row, /* Container */ } from "../components/Grid";
 import Button from "../components/Button";
 import { BookList, BookListItem } from "../components/BookList";
 import API from "../utils/API";
@@ -78,7 +78,7 @@ class Search extends Component {
 
   render() {
     return (
-      <Container>
+      <div>
         <Row>
           <div className="col-md-4 rounded bg-dark p-5">
             <h4>Search and save books from google!</h4>
@@ -131,7 +131,14 @@ class Search extends Component {
               )}
           </div>
         </Row>
-      </Container>
+        <Row>
+          <div className="pt-3 text-justify font-italic">
+            <p>Google Books (previously known as Google Book Search and Google Print and by its codename Project Ocean) is a service from Google Inc. that searches the full text of books and magazines that Google has scanned, converted to text using optical character recognition (OCR), and stored in its digital database.Books are provided either by publishers and authors through the Google Books Partner Program, or by Google's library partners through the Library Project.Additionally, Google has partnered with a number of magazine publishers to digitize their archives.The Publisher Program was first known as Google Print when it was introduced at the Frankfurt Book Fair in October 2004. The Google Books Library Project, which scans works in the collections of library partners and adds them to the digital inventory, was announced in December 2004.
+The Google Books initiative has been hailed for its potential to offer unprecedented access to what may become the largest online body of human knowledge and promoting the democratization of knowledge. However, it has also been criticized for potential copyright violations,and lack of editing to correct the many errors introduced into the scanned texts by the OCR process.As of October 2015, the number of scanned book titles was over 25 million, but the scanning process has slowed down in American academic libraries.Google estimated in 2010 that there were about 130 million distinct titles in the world,and stated that it intended to scan all of them.As of October 2019, Google celebrated 15 years of Google Books and provided the number of scanned books as more than 40 million titles.
+            </p>
+          </div>
+        </Row>
+      </div>
     )
   }
 }
