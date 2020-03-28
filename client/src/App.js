@@ -16,6 +16,7 @@ import Nav from './components/Nav';
 //import Nav from "./components/Nav";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
+import Posts from './components/Posts/Posts';
 //import NoMatch from "./pages/NoMatch";
 
 // Redux
@@ -43,12 +44,14 @@ const App = () => {
 <Router >
 <Fragment>
      <Navbar className="navbar"/>
+
   <div className="hi"> 
   <section className="container m-6">
      <Alert /> 
     <Switch>
      <Route exact path='/' component={Landing} />
      <Route exact path='/home' component={Home} />
+     <Route exact path='/posts' component={Posts} />
      <Route exact path='/register' component={Register} />
      <Route exact path='/login' component={Login} />
      <PrivateRoute exact path='/dashboard' component={Dashboard} />

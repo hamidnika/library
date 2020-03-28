@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const bookSchema = new Schema({
   googleId: {
     type: String,
-    required: true
+    required: false
   },
   title: {
     type: String,
@@ -12,20 +12,20 @@ const bookSchema = new Schema({
   },
   authors: {
     type: Array,
-    required: true
+    required: false
   },
   description: {
     type: String,
-    required: true
+    required: false
   },
   href: {
     type: String,
-    required: true,
+    required: false,
     unique: true
   },
   thumbnail: {
     type: String,
-    required: true
+    required: false
   }
 });
 

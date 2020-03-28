@@ -6,7 +6,7 @@ export default class Nav extends Component {
   render() {
   return (
     <React.Fragment>
-<footer className="page-footer font-small bg-dark cyan darken-3 ">
+<footer className="page-footer font-small hii cyan darken-3 ">
 
   <div className="container">
     <div className="row">
