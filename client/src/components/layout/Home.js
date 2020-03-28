@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Homepart from './Homepart';
 import { Link } from 'react-router-dom';
+import { FaRegSave, FaSearch } from 'react-icons/fa';
 
 export default class Home extends Component {
     render() {
@@ -41,8 +42,8 @@ export default class Home extends Component {
         	<div className="card bg-secondary text-white">
           <div className="card-body">
           <p className="card-text">Foundation looks at the state of global at the state of global development.</p>
-          <h6 className="btn bg-dark p-2 text-center"><Link to="/search" className="btn bg-dark text-white">Search and save Books in Google</Link></h6>
-          <h6 className="btn bg-dark p-2 text-center"><Link to="/saved" className="btn bg-dark text-white">See the Saved Books by Users from Google</Link></h6>
+          <h6 className="btn bg-dark p-2 text-center"><Link to="/search" className="btn bg-dark text-white">Search and save Books from GoogleBooks API <h3><FaSearch /></h3></Link></h6>
+          <h6 className="btn bg-dark p-2 text-center"><Link to="/saved" className="btn bg-dark text-white">See the Saved Books by Users from GoogleBooks API <h3><FaRegSave /></h3></Link></h6>
                   
           </div>
 				</div>

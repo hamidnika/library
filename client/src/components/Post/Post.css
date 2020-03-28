@@ -3,20 +3,25 @@
     font-family: 'Noticia Text';
     display: flex;
     flex-direction: column;
-    padding: 2%;
-    margin: 0 1%;
+    padding: 4%;
+    margin: 0%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .heading {
-    height: 125px;
+    height: 80px;
     text-align: center;
     display: flex;
     align-items: center;
+    padding: 0px
 }
 
 .image {
-    width: 100%;
-    height: 200px;
+    width: 80%;
+    height: "auto";
+    padding-top: 0px;
+    padding-left:15px;
 }
 
 .info {
