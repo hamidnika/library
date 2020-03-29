@@ -31,6 +31,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <span>Dashboard</span>
         </Link>
       </li>
+      <li className="btn-outline-warning" >
+      <li className="btn-outline-warning" >
+        <Link to="/about">About Us</Link>
+      </li>
+      </li>
       <li className="btn-outline-warning">
         <Link onClick={logout} to="/home">
          <i className="fas fa-sign-out-alt" />
@@ -58,6 +63,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
       <li className="btn-outline-warning">
       <Link to="/">Welcome Page</Link>
+      </li>
+      <li className="btn-outline-warning" >
+        <Link to="/about">About Us</Link>
       </li>
     </ul>
     );

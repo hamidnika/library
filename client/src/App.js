@@ -17,6 +17,7 @@ import Nav from './components/Nav';
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import Posts from './components/Posts/Posts';
+import About from './components/Posts/about';
 //import NoMatch from "./pages/NoMatch";
 
 // Redux
@@ -52,6 +53,7 @@ const App = () => {
      <Route exact path='/' component={Landing} />
      <Route exact path='/home' component={Home} />
      <Route exact path='/posts' component={Posts} />
+     <Route exact path='/about' component={About} />
      <Route exact path='/register' component={Register} />
      <Route exact path='/login' component={Login} />
      <PrivateRoute exact path='/dashboard' component={Dashboard} />

@@ -23,11 +23,11 @@ export default class Homepart extends Component {
         <div className="col-md-3">
           <div className="card bg-secondary">
             <div className="card-body">
-              <h6 className="card-title bg-dark p-2 text-center text-3d">About our Associations</h6>
-              <p className="card-text text-white"> pressure and producing results to tight deadlines.</p>
+              <h6 className="card-title bg-dark p-2 text-center text-3d">About Persian Associations</h6>
+              <p className="card-text text-white">We make network among Persians in Germany.</p>
               <img src={require('./associations.jpg')} class="img-fluid responsive" alt="asso"/>
               
-              <a href="http://hamid88.herokuapp.com/about.html" className="btn bg-secondary text-white"> Read More ...</a>
+              <Link to="/about" className="btn bg-secondary text-white"> Read More ...</Link>
             </div>
           </div>
           </div>

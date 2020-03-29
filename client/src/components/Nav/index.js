@@ -51,7 +51,7 @@ export default class Nav extends Component {
 
   </div>
 
-  <div className="text-center py-2">© 2020 Copyright:
+  <div className="text-center py-2 text-white">© 2020 Copyright:
     <a className="text-warning middle" href="www.booklook.com"> booklook.com</a>
   </div>
  
