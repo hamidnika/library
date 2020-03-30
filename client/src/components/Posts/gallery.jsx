@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Col } from 'react-bootstrap';
 import './Posts.css';
 
-export default class About extends Component {
+export default class Gallery extends Component {
   render() {
     return (
       <div>

@@ -13,7 +13,7 @@ export default class Home extends Component {
           <div className="col-md-4 bg-secondary">
             <div className="card-body">
              
-            <a href="http://hamid88.herokuapp.com/about.html"><h6 className="bg-secondary text-white p-2 text-center">Pictures and Videos of Persian Cultural Events in Germany</h6></a>
+            <Link to="./gallery"><h6 className="bg-secondary text-white p-2 text-center">Pictures and Videos of Persian Cultural Events in Germany</h6></Link>
                <div className="pics">
               <img src={require('./images/tehra.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic"/>
               <img src={require('./images/tteh.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic1"/>

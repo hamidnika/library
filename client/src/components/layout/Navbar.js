@@ -32,9 +32,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li className="btn-outline-warning" >
+        <Link to="/gallery">Gallery</Link>
+      </li>
       <li className="btn-outline-warning" >
         <Link to="/about">About Us</Link>
-      </li>
       </li>
       <li className="btn-outline-warning">
         <Link onClick={logout} to="/home">
@@ -63,6 +64,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
       <li className="btn-outline-warning">
       <Link to="/">Welcome Page</Link>
+      </li>
+      <li className="btn-outline-warning" >
+        <Link to="/gallery">Gallery</Link>
       </li>
       <li className="btn-outline-warning" >
         <Link to="/about">About Us</Link>

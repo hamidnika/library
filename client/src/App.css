@@ -677,7 +677,7 @@ button {
 
 .hi {
   /* background-image: url("../src/img/lib.jpg"); */
-  background-color: #c0bcc0;
+  background-color: #c0bcc0;;
   padding-top: 30px;
   background-repeat:no-repeat;
   background-attachment:fixed;
