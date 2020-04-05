@@ -59,46 +59,35 @@ const CreateProfile = ({ createProfile, history }) => {
       <small className="text-white bg-dark">* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
 
-        <div className="form-group">
-          <select name="status" value={status} onChange={e => onChange(e)}>
-            <option value="0">* Select Professional Status</option>
-            <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
-            <option value="Other">Other</option>
-          </select>
-          <small className="form-text text-white bg-dark"
-            >Status of Your Job or Education</small>
+      <div className="form-group">
+          <input type="text" placeholder="Job" name="status" value={status} onChange={e => onChange(e)}/>
+          <small className="purplle text-white pl-2">your current job</small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="Company" name="company" value={company}
            onChange={e => onChange(e)}/>
-          <small className="form-text text-white bg-dark"
-            >Could be your own company or one you work for</small
+          <small className="purplle text-white pl-2"
+            >your own company or the one you work for</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website}
           onChange={e => onChange(e)}/>
-          <small className="form-text text-white bg-dark"
+          <small className="purplle text-white pl-2"
             >Could be your own or a company website</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location}
            onChange={e => onChange(e)}/>
-          <small className="form-text text-white bg-dark"
+          <small className="purplle text-white pl-2"
             >City & state suggested (eg. Boston, MA)</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills}
            onChange={e => onChange(e)}/>
-          <small className="form-text text-white bg-dark"
+          <small className="purplle text-white pl-2"
             >Please use comma separated values (eg.
             HTML,CSS,JavaScript,PHP)</small
           >
@@ -111,20 +100,20 @@ const CreateProfile = ({ createProfile, history }) => {
             value={githubusername}
            onChange={e => onChange(e)}
           />
-          <small className="form-text text-white bg-dark">your
+          <small className="purplle text-white pl-2">your
           Github username</small>
         </div>
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={bio}
            onChange={e => onChange(e)}></textarea>
-          <small class="form-text text-white bg-dark">Tell us a little about yourself</small>
+          <small class="purplle text-white pl-2">Tell us a little about yourself</small>
         </div>
 
         <div>
-          <button className="btn-dark text-warning my-2" onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button">
+          <button className="btn text-white purplle" onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button">
           Add Social Network Links
           </button>
-          <span className="text-white bg-dark">Optional</span>
+          <span className="text-white">*Optional</span>
         </div>
         {displaySocialInputs && <Fragment>
             <div className="form-group social-input">
@@ -159,8 +148,8 @@ const CreateProfile = ({ createProfile, history }) => {
         
         </Fragment>}
         
-        <input type="submit" className="btn btn-dark text-warning my-2" />
-        <Link className="btn btn-dark my-1" to="/dashboard">
+        <input type="submit" className="btn purplle text-white my-1" />
+        <Link className="btn text-warning purplle my-1" to="/dashboard">
         Go Back
         </Link>
       </form>  

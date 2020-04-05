@@ -30,10 +30,10 @@ export function BookListItem({
               className="btn btn-success"
               onClick={event => clickEvent(event, googleId, title, authors, description, href, thumbnail)}>Save</button>
           ) : (
-              <button className="btn btn-danger" onClick={event => clickEvent(event, googleId)}>Unsave</button>
+              <button className="btn btn-dark" onClick={event => clickEvent(event, googleId)}>Unsave</button>
             )
           }
-          <a className="btn btn-primary ml-2 mr-2" href={href} target="_blank" rel="noopener noreferrer">View</a>
+          <a className="btn purple text-white ml-2 mr-2" href={href} target="_blank" rel="noopener noreferrer">View</a>
         </div>
       }
 
@@ -56,12 +56,12 @@ export function BookListItem({
               className="btn btn-success btn-block"
               onClick={event => clickEvent(event, googleId, title, authors, description, href, thumbnail)}>Save</button>
           ) : (
-              <button className="btn btn-danger btn-block" onClick={event => clickEvent(event, googleId)}>Unsave</button>
+              <button className="btn btn-dark btn-block" onClick={event => clickEvent(event, googleId)}>Unsave</button>
             )
           }
           </Col>
           <Col>
-            <a className="btn btn-primary btn-block" href={href} target="_blank" rel="noopener noreferrer">View</a>
+            <a className="btn purple text-white btn-block" href={href} target="_blank" rel="noopener noreferrer">View</a>
           </Col>
         </div>
       }

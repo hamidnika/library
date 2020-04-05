@@ -24,8 +24,9 @@ const AddExperience = ({ addExperience, history }) => {
 
   return (
     <Fragment>
-      <h3 className='bg-dark text-warning'>Add your Experiences</h3>
-      <small className="bg-dark text-warning">* = required field</small>
+      <div className="purpllle rounded">
+      <h5 className='purpllle pl-2 pt-2 text-white'>Add your Experiences</h5>
+      <small className="purplle pl-2 text-white">* = required field</small>
       <form
         className='form'
         onSubmit={e => {
@@ -63,7 +64,7 @@ const AddExperience = ({ addExperience, history }) => {
           />
         </div>
         <div className='form-group'>
-          <h5 className="bg-dark text-warning">From Date</h5>
+          <h6 className="pl-2 purpllle text-white">From Date</h6>
           <input
             type='date'
             name='from'
@@ -72,7 +73,7 @@ const AddExperience = ({ addExperience, history }) => {
           />
         </div>
         <div className='form-group'>
-          <p className="bg-dark text-warning">
+          <p className="pl-2 purpllle text-white">
             <input
               type='checkbox'
               name='current'
@@ -87,7 +88,7 @@ const AddExperience = ({ addExperience, history }) => {
           </p>
         </div>
         <div className='form-group'>
-          <h5 className="bg-dark text-warning">To Date</h5>
+          <h6 className="pl-2 purpllle text-white">To Date</h6>
           <input
             type='date'
             name='to'
@@ -101,16 +102,17 @@ const AddExperience = ({ addExperience, history }) => {
             name='description'
             cols='30'
             rows='5'
-            placeholder='Job Description'
+            placeholder='Description'
             value={description}
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn bg-dark text-warning my-1' />
-        <Link className='btn bg-warning text-dark my-1' to='/dashboard'>
+        <input type='submit' className='btn purplle text-white my-1' />
+        <Link className='btn purplle text-warning my-1' to='/dashboard'>
           Go Back
         </Link>
       </form>
+      </div>
     </Fragment>
   );
 };

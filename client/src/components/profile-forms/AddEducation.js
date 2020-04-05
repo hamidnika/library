@@ -32,8 +32,9 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <h3 className='bg-dark text-warning'>Add Your Education</h3>
-      <small className="bg-dark text-warning">* = required field</small>
+      <div className="purpllle rounded">
+      <h5 className='pl-2 pt-2 purpllle text-white'>Add Your Education</h5>
+      <small className="pl-2 purplle text-white">* = required field</small>
       <form
         className='form'
         onSubmit={e => {
@@ -71,7 +72,7 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <div className='form-group'>
-          <h5 className="bg-dark text-warning">From Date</h5>
+          <h6 className="pl-2 purpllle text-white">From Date</h6>
           <input
             type='date'
             name='from'
@@ -80,9 +81,9 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <div className='form-group'>
-          <p className="bg-dark text-warning">
+          <p className="pl-2 purpllle text-white">
             <input
-              className="bg-dark text-warning"
+              className="text-white"
               type='checkbox'
               name='current'
               checked={current}
@@ -92,11 +93,11 @@ const AddEducation = ({ addEducation, history }) => {
                 toggleDisabled(!toDateDisabled);
               }}
             />{' '}
-            Current School
+            Current School/University
           </p>
         </div>
         <div className='form-group'>
-          <h5 className="bg-dark text-warning">To Date</h5>
+          <h6 className="pl-2 purpllle text-white">To Date</h6>
           <input
             type='date'
             name='to'
@@ -110,16 +111,17 @@ const AddEducation = ({ addEducation, history }) => {
             name='description'
             cols='30'
             rows='5'
-            placeholder='Program Description'
+            placeholder='Description'
             value={description}
             onChange={e => onChange(e)}
           />
         </div>
-        <input type='submit' className='btn bg-dark text-warning my-1' />
-        <Link className='btn bg-warning text-dark my-1' to='/dashboard'>
+        <input type='submit' className='btn purplle text-white my-1' />
+        <Link className='btn purplle text-warning my-1' to='/dashboard'>
           Go Back
         </Link>
       </form>
+      </div>
     </Fragment>
   );
 };

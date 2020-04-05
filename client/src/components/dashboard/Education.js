@@ -31,7 +31,7 @@ const Education = ({ education, deleteEducation }) => {
 
   return (
     <Fragment>
-      <h4 className="my-2 bg-dark text-white">Education Background</h4>
+      <h6 className="my-2 text-white pl-2">Education Background</h6>
       <table className="table-responsive">
         <thead >
           <tr >

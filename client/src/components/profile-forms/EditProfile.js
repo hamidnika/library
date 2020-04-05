@@ -73,56 +73,43 @@ const EditProfile = ({
     }
 
     return (
-     
         <Fragment>
- 
-          <h3 className="text-warning bg-dark">
+  <div className="purpllle rounded">
+          <h5 className="text-white pl-2 pt-2 purpllle">
         Edit your Profile
-      </h3>
+      </h5>
 
-      <small>* = required field</small>
+      <small className="purplle pl-2 text-white">* = required field</small>
       <form className="form" onSubmit={e => onSubmit(e)}>
   
         <div className="form-group">
-          <select name="status" value={status} onChange={e => onChange(e)}>
-            <option value="0">* Select Professional Status</option>
-            <option value="Developer">Developer</option>
-            <option value="Junior Developer">Junior Developer</option>
-            <option value="Senior Developer">Senior Developer</option>
-            <option value="Manager">Manager</option>
-            <option value="Student or Learning">Student or Learning</option>
-            <option value="Instructor">Instructor or Teacher</option>
-            <option value="Intern">Intern</option>
-            <option value="Other">Other</option>
-          </select>
-          <small className="form-text text-warning bg-dark"
-            >what is your your job</small>
+          <input type="text" placeholder="Job" name="status" value={status} onChange={e => onChange(e)}/>
+          <small className="purplle text-white pl-2">your current job</small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="Company" name="company" value={company} onChange={e => onChange(e)}/>
-          <small className="form-text text-warning bg-dark"
-            >Could be your own company or one you work for</small
+          <small className="purplle text-white pl-2"
+            >your own company or the one you work for</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Website" name="website" value={website}
           onChange={e => onChange(e)}/>
-          <small className="form-text text-warning bg-dark"
-            >Could be your own or a company website</small
+          <small className="purplle text-white pl-2"
+            >your own or a company website</small
           >
         </div>
         <div className="form-group">
           <input type="text" placeholder="Location" name="location" value={location}
            onChange={e => onChange(e)}/>
-          <small className="form-text text-warning bg-dark"
-            >City </small>
+          <small className="purplle text-white pl-2"
+            >City/Country </small>
         </div>
         <div className="form-group">
           <input type="text" placeholder="* Skills" name="skills" value={skills}
            onChange={e => onChange(e)}/>
-          <small className="form-text text-warning bg-dark"
-            >Please use comma separated values (eg.
-            HTML,CSS,JavaScript,PHP)</small
+          <small className="purplle text-white pl-2"
+            >Skills (Please use comma to separate skills)</small
           >
         </div>
         <div className="form-group">
@@ -133,22 +120,21 @@ const EditProfile = ({
             value={githubusername}
            onChange={e => onChange(e)}
           />
-          <small className="form-text text-warning bg-dark"
-            >If you want your latest repos and a Github link, include your
-            username</small
+          <small className="purplle text-white pl-2"
+            >If you want your latest repos and a Github link</small
           >
         </div>
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={bio}
            onChange={e => onChange(e)}></textarea>
-          <small class="form-text text-warning bg-dark">Tell us a little about yourself</small>
+          <small class="purplle text-white pl-2">Tell us a little about yourself</small>
         </div>
 
         <div className="my-2">
-          <button onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button" className="btn btn-light">
+          <button onClick={() => toggleSocialInputs(!displaySocialInputs)} type="button" className="btn text-white purplle">
             Add Social Network Links
           </button>
-          <span>Optional</span>
+          <span className="text-white">*Optional</span>
         </div>
         {displaySocialInputs && <Fragment>
             <div className="form-group social-input">
@@ -183,11 +169,12 @@ const EditProfile = ({
         
         </Fragment>}
         
-        <input type="submit" className="btn btn-dark my-1" />
-        <Link className="btn btn-light my-1" to="/dashboard">
+        <input type="submit" className="btn purplle text-white my-1" />
+        <Link className="btn text-warning purplle my-1" to="/dashboard">
         Go Back
         </Link>
-      </form>  
+      </form>
+      </div>
     </Fragment>
     )
 }

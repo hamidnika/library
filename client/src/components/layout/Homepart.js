@@ -6,7 +6,7 @@ export default class Homepart extends Component {
         return (
             <div>
                  <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-3 rounded">
           <div className="card">
             <div className="card-body bg-secondary text-white">
              
@@ -31,11 +31,11 @@ export default class Homepart extends Component {
             </div>
           </div>
           </div>
-
-      
+          
           <div className="col-md-3">
         	<div className="card bg-secondary">
           <div className="card-body">
+  
 					<h1 className="card-title assotilte p-2 text-center text-3d">Chat <a href="http://hamid88.herokuapp.com/about.html" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
 				  <p className="card-text text-white"> of global development when the drugs don’t work and a post-antibiotic era sets in.The report show sreport shows how how antibiotic</p>
           </div>

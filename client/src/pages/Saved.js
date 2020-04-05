@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Row } from "../components/Grid";
 import { BookList, BookListItem } from "../components/BookList";
 import API from "../utils/API";
+import { FaRegSave } from 'react-icons/fa';
 
 class Saved extends Component {
 
@@ -37,7 +38,7 @@ class Saved extends Component {
       <div>
         <Row>
           <div className="col-md-12 border border-rounded p-3 mb-2 bg-secondary">
-          <h3 className="col-md-12 rounded bg-dark text-warning p-2">Saved Books</h3>
+          <h4 className="col-md-12 rounded purplle text-warning p-2">Saved Books <FaRegSave /></h4>
             {!this.state.savedBooks.length ? (
               <h6 className="text-center text-white">No books to display currently</h6>
             ) : (
@@ -71,7 +72,7 @@ class Saved extends Component {
 
 Google Books can retrieve scanned books from URLs based on the ISBN.
 
-Signed-in users can create a personalized collection or a "library" of books, using the "My Library" feature. Organized through "bookshelves", books can be added to the library using a button that appears along with search results or from the "Overview" page of books. The library can be shared with friends by making bookshelves publicly visible and sharing the private library URL. Users can also import a list of books to the library using their ISBN or ISSN numbers. There are four default bookshelves which cannot be renamed: "Favorites", "Reading now", "To read" and "Have read".[29][30] The library also has default bookshelves ("Purchased", "Reviewed", "My Books on Google Play", "Recently viewed", "Browsing history", and "Books for you") to which books get added automatically.
+Signed-in users can create a personalized collection or a "library" of books, using the "My Library" feature. Organized through "bookshelves", books can be added to the library using a button that appears along with search results or from the "Overview" page of books. The library can be shared with friends by making bookshelves publicly visible and sharing the private library URL. Users can also import a list of books to the library using their ISBN or ISSN numbers. There are four default bookshelves which cannot be renamed: "Favorites", "Reading now", "To read" and "Have read".The library also has default bookshelves ("Purchased", "Reviewed", "My Books on Google Play", "Recently viewed", "Browsing history", and "Books for you") to which books get added automatically.
 
             </p>
           </div>

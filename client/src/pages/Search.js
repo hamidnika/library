@@ -3,6 +3,8 @@ import { Row, /* Container */ } from "../components/Grid";
 import Button from "../components/Button";
 import { BookList, BookListItem } from "../components/BookList";
 import API from "../utils/API";
+import im from "../img/persians.jpg"
+import { FaSearch } from 'react-icons/fa';
 
 class Search extends Component {
 
@@ -80,8 +82,8 @@ class Search extends Component {
     return (
       <div>
         <Row>
-          <div className="col-md-4 rounded bg-dark p-5">
-            <h4>Search and save books from google!</h4>
+          <div className="col-md-3 rounded bg-dark pt-4">
+            <h5>Search and save books from google!</h5>
             <form>
               <div className="form-group">
                 <input
@@ -92,17 +94,16 @@ class Search extends Component {
                   value={this.state.bookSearch}
                   onChange={this.handleInputChange} />
               </div>
-              <Button onClick={this.handleFormSubmit}>Search</Button>
-
-              <div className="ml-3 h" style={{height: this.state.books.length*112}} onChange={this.handleInputChange}></div>
+              <Button onClick={this.handleFormSubmit}><h6>Search <FaSearch /></h6></Button>
+              <img src={im} alt="logo" style={{height: this.state.books.length*5}} onChange={this.handleInputChange} />
             </form>
           </div>
-          <div className="col-md-8 border border-rounded bg-secondary p-3 mb-4">
+          <div className="col-md-9 border rounded purplle pt-4 ">
             {this.state.searched === "" ? (
-            <h4  className="text-white">Results</h4>
+            <h5  className="text-white">Results</h5>
             
             ) : (
-              <h4 className="bg-dark text-warning">Results for {this.state.searched}</h4>
+              <h5 className="bg-dark text-warning">Results for {this.state.searched}</h5>
             )}
             {!this.state.books.length ? (
               <h6 className="text-center text-white">No books to display currently</h6>

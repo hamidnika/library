@@ -687,12 +687,12 @@ button {
   background-position: center;
 }
 .hii {
- 
   background-color: black;
 }
-.h {
+/* .h {
   background-image: url("../src/img/persians.jpg");
-}
+  width: 80px;
+} */
 
 .App {
   text-align: center;
@@ -950,3 +950,34 @@ button {
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+
+
+
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.purple{
+  background-color: rgb(80, 21, 80);
+}
+.purplle{
+  background-color: rgb(46, 40, 46);
+  box-shadow: -3px 1px 15px 1px rgba(0,0,0,0.7);
+}
+.purpllle{
+  background-color: rgb(104, 82, 104);
+  text-shadow: 0.5px 0.5px;
+  
+}
+
