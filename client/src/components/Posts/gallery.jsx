@@ -5,19 +5,30 @@ import './Posts.css';
 export default class Gallery extends Component {
   render() {
     return (
-      <div>
-      {/*   <Image src="assets/dog-people.jpg" className="header-image" /> */}
+  
         <div>
-          <Col xs={12} sm={8} smOffset={2}>
-          <img src={require('./lib.jpg')} class="img-fluid responsive" alt="asso"/>
-            <h3>About Persian Associations in Germany</h3>
-            <p className="text-justify font-italic">
-            In this website, we try to make network via chat application and also sharing latest news and developments of Persian community in Germany. In addition, Having access to search and save books via Googlebooks is another feature of this website. The massive flight of Persians to Germany considerably changed the structure of the Persian colony as regards age, sex and profession. Four dacades ago, men formed the large majority of the Persians living in Germany, but this ratio had changed significantly in the 1990s. For instance, the ratio of 4.33 men to every woman in 1961 had dropped to 1.56 men to a woman in 1995 (Statistische Bundesmat, pp. 23 ff.; Schröder, Schukar, and Adineh, p. 21). Before the revolution, Persians within the age group of 1 to 15 years made an insignificant percentage of their community as a whole, but in 1995 their proportion rose to 19.3 percent with 20,600 individuals. In the same year, the group aged between 30 to 45 years, with 43,800 individuals, formed the largest part (40.9 percent) of the Persian population in Germany; it was followed by the age group between 15 and 30 years, which amounted to 20.4 percent of the total number. Physicians formed the most important group of Persians with compulsory social security in the year 1975, but their proportion together with pharmacists only amounted to 4.1 percent in the year 1992. The number of students in 1975 amounted to about 3,457 or about 18 percent of total number of Persians, but this proportion decreased to only 11 percent in the year 1991. In the same year, the largest proportion of working Persians subscribing to social security consisted of merchants, who made up 8.9 percent of the community, followed by professional engaged in health services with 7.2 percent, excluding doctors and pharmacists. Engineers, office workers, and assistants formed the next major professional group with 6.4 and 6.1 percent. Twenty-two percent of the employees were women. In 1995, most Persians lived in Hamburg, Berlin, Frankfurt, Cologne, Munich, Hanover, Dortmund, Düsseldorf, Aachen, and Essen, dispersed among several districts.   
-            </p>
-          </Col>
+          <div className="pics">
+    <iframe title="video" width="200" height="auto" src="https://www.youtube.com/embed/6xrJy-1_qS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video" width="200" height="auto" src="https://www.youtube.com/embed/9Auq9mYxFEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video1" width="200" height="auto" src="https://www.youtube.com/embed/TE5d4omulHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video2" width="200" height="auto" src="https://www.youtube.com/embed/TwfPb9rsDyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video3" width="200" height="auto" src="https://www.youtube.com/embed/6xrJy-1_qS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video4" width="200" height="auto" src="https://www.youtube.com/embed/fDhGPYWfKFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video5" width="200" height="auto" src="https://www.youtube.com/embed/a3bOL8j3ypQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video6" width="200" height="auto" src="https://www.youtube.com/embed/Kyf85-yi7GI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video7" width="200" height="auto" src="https://www.youtube.com/embed/V4niY5Uq95k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video7" width="200" height="auto" src="https://www.youtube.com/embed/g6pcOZQhmq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> 
+          <div className="pics">
+              <img src={require('../layout/images/tehra.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic"/>
+              <img src={require('../layout/images/tteh.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic1"/>
+              <img src={require('../layout/images/tehhr.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic2"/>
+              <img src={require('../layout/images/tehrran.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic3"/>
+              <img src={require('../layout/images/tehri.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic4"/>
+              <img src={require('../layout/images/tehran.jpg')} class="img-fluid p-2 col-md-4 pics" alt="pic5"/>
+             
+         </div>
         </div>
-       
-      </div>
     )
   }
 }

@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a32071a4.chunk.css",
-    "main.js": "/static/js/main.1b19fef7.chunk.js",
-    "main.js.map": "/static/js/main.1b19fef7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.fe86c051.js",
-    "runtime-main.js.map": "/static/js/runtime-main.fe86c051.js.map",
-    "static/js/2.65da06ab.chunk.js": "/static/js/2.65da06ab.chunk.js",
-    "static/js/2.65da06ab.chunk.js.map": "/static/js/2.65da06ab.chunk.js.map",
+    "main.css": "/static/css/main.adaf33c2.chunk.css",
+    "main.js": "/static/js/main.ef1b1583.chunk.js",
+    "main.js.map": "/static/js/main.ef1b1583.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.194504c1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.194504c1.js.map",
+    "static/js/2.082945c0.chunk.js": "/static/js/2.082945c0.chunk.js",
+    "static/js/2.082945c0.chunk.js.map": "/static/js/2.082945c0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5d0f58d40001731ff031bc8634a49229.js": "/precache-manifest.5d0f58d40001731ff031bc8634a49229.js",
+    "precache-manifest.d5e63c4a00c47103da0e1cc418b133b6.js": "/precache-manifest.d5e63c4a00c47103da0e1cc418b133b6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a32071a4.chunk.css.map": "/static/css/main.a32071a4.chunk.css.map",
-    "static/js/2.65da06ab.chunk.js.LICENSE": "/static/js/2.65da06ab.chunk.js.LICENSE",
+    "static/css/main.adaf33c2.chunk.css.map": "/static/css/main.adaf33c2.chunk.css.map",
+    "static/js/2.082945c0.chunk.js.LICENSE": "/static/js/2.082945c0.chunk.js.LICENSE",
+    "static/media/Nikou.jpg": "/static/media/Nikou.398e4068.jpg",
     "static/media/associations.jpg": "/static/media/associations.2e33a4b9.jpg",
     "static/media/lib.jpg": "/static/media/lib.4742e945.jpg",
     "static/media/newss.jpg": "/static/media/newss.e81af2ac.jpg",
@@ -19,6 +20,7 @@
     "static/media/persians.jpg": "/static/media/persians.a2bfc149.jpg",
     "static/media/App.css": "/static/media/showcase.3f6ed9e5.jpg",
     "static/media/spinner.gif": "/static/media/spinner.8f400896.gif",
+    "static/media/team3.jpg": "/static/media/team3.96ed83da.jpg",
     "static/media/tehhr.jpg": "/static/media/tehhr.a0d916a9.jpg",
     "static/media/tehra.jpg": "/static/media/tehra.2d734706.jpg",
     "static/media/tehran.jpg": "/static/media/tehran.3f6ed9e5.jpg",
@@ -27,9 +29,9 @@
     "static/media/tteh.jpg": "/static/media/tteh.89cb7cf1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe86c051.js",
-    "static/js/2.65da06ab.chunk.js",
-    "static/css/main.a32071a4.chunk.css",
-    "static/js/main.1b19fef7.chunk.js"
+    "static/js/runtime-main.194504c1.js",
+    "static/js/2.082945c0.chunk.js",
+    "static/css/main.adaf33c2.chunk.css",
+    "static/js/main.ef1b1583.chunk.js"
   ]
 }

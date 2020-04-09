@@ -24,8 +24,9 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <h4 className="text-warning bg-dark">Login</h4>
-      <p className="text-warning bg-dark">
+      <div className="purpllle">
+      <h4 className="text-white">Login</h4>
+      <p className="text-white">
         <i className="fas fa-user" /> Login Into Your Account
       </p>
       <form className="form" onSubmit={e => onSubmit(e)}>
@@ -49,11 +50,12 @@ if(isAuthenticated) {
             minLength="6"
           />
         </div>
-        <input type="submit" className="btn text-warning bg-dark" value="Login" />
+        <input type="submit" className="btn text-white purplle" value="Login" />
       </form>
-      <p className="my-1 text-warning bg-dark">
-        Don't have an account? <Link className="text-white bg-dark" to="/register">Register</Link>
+      <p className="my-1 text-white">
+        Don't have an account? <Link className="text-white purplle" to="/register">Register</Link>
       </p> 
+      </div>
     </Fragment>
     )
     

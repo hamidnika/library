@@ -37,7 +37,7 @@ export default class Homepart extends Component {
           <div className="card-body">
   
 					<h1 className="card-title assotilte p-2 text-center text-3d">Chat <a href="http://hamid88.herokuapp.com/about.html" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
-				  <p className="card-text text-white"> of global development when the drugs don’t work and a post-antibiotic era sets in.The report show sreport shows how how antibiotic</p>
+				  <p className="card-text text-white">You can chat with others to make connection and also naturally you can ask about your needs in Germany and share your experiences with others.</p>
           </div>
 				</div>
         </div>
@@ -49,6 +49,7 @@ export default class Homepart extends Component {
               <img src={require('./newss.jpg')} class="img-fluid responsive" alt="asso"/>
                 </div> 
                 <h6 className="text-white bg-dark p-2 text-center ani">News of the World</h6>
+                <p className="card-text text-white">In this section you can have access to the News and latest developments of lots of countries.</p>
               <Link to="/posts" className="btn glow-on-hover">Read more ...</Link>
               
             </div>

@@ -32,8 +32,9 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <h4 className="text-warning bg-dark">Register</h4>
-      <p className="text-warning bg-dark">
+      <div className="purpllle">
+      <h4 className="text-white pl-2">Register</h4>
+      <p className="text-white pl-2">
         <i className="fas fa-user" /> Create Your Account
       </p>
       <form className="form" onSubmit={e => onSubmit(e)}>
@@ -73,11 +74,12 @@ if(isAuthenticated) {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type="submit" className="btn text-warning bg-dark" value="Register" />
+        <input type="submit" className="btn text-white purplle" value="Register" />
       </form>
-      <p className="text-warning bg-dark mt-1">
-        Already have an account? <Link className="text-white bg-dark" to="/login">Login</Link>
+      <p className="text-white mt-1 pl-2">
+        Already have an account? <Link className="text-white purplle" to="/login">Login</Link>
       </p> 
+      </div>
     </Fragment>
     )
     
