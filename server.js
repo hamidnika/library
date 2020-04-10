@@ -26,12 +26,20 @@ app.use("/api/profile", require("./routes/api/profile"));
 
 
 
+  
+var cors = require('cors');
+app.use(cors({ origin: true, credentials: true }));
+
+// use Routes
+app.use('/api/bookss', require('./routes/api/books'));
+
 
 // Define API routes here
 app.use("/api", apiRoutes);
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
 
 const PORT = process.env.PORT || 5000;
 

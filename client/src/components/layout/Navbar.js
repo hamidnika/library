@@ -12,8 +12,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
-      <li className="btn-outline-warning">
+     {/*  <li className="btn-outline-warning">
       <Link to="/posts">News</Link>
+      </li> */}
+      <li className="btn-outline-warning">
+      <Link to="/bk">Persian News</Link>
       </li>
       <li className="btn-outline-warning">
         <Link to="/saved">
@@ -53,8 +56,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
-      <li className="btn-outline-warning">
+     {/*  <li className="btn-outline-warning">
       <Link to="/posts">News</Link>
+      </li> */}
+      <li className="btn-outline-warning">
+      <Link to="/bk">Persian News</Link>
       </li>
       <li className="btn-outline-warning">
         <Link to="/register">Register</Link>

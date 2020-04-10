@@ -27,8 +27,12 @@ import store from './store';
 import { loadUser } from './actions/auth';
 import setAuthToken from './utils/setAuthToken';
 
-
 import './App.css';
+
+import CreateBook from './componentss/CreateBook';
+import ShowBookList from './componentss/ShowBookList';
+import ShowBookDetails from './componentss/ShowBookDetails';
+import UpdateBookInfo from './componentss/UpdateBookInfo';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);
@@ -51,6 +55,10 @@ const App = () => {
   <section className="container m-6">
      <Alert /> 
     <Switch>
+    <Route exact path='/bk' component={ShowBookList} />
+    <PrivateRoute path='/create-book' component={CreateBook} />
+    <PrivateRoute path='/edit-book/:id' component={UpdateBookInfo} />
+    <PrivateRoute path='/show-book/:id' component={ShowBookDetails} />
      <Route exact path='/' component={Landing} />
      <Route exact path='/home' component={Home} />
      <Route exact path='/posts' component={Posts} />
