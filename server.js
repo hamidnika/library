@@ -28,8 +28,8 @@ app.use("/api/profile", require("./routes/api/profile"));
 
   
 var cors = require('cors');
-app.use(cors());
-//{ origin: true, credentials: true }
+app.use(cors({ origin: true, credentials: true }));
+
 // use Routes
 app.use('/api/bookss', require('./routes/api/books'));
 
