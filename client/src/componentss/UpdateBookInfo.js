@@ -71,13 +71,13 @@ class UpdateBookInfo extends Component {
             <div className="col-md-8 m-auto">
               <br />
               <Link to="/bk" className="btn btn-outline-warning float-left">
-                  Show BooK List
+                  Show News List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Edit Book</h1>
+              <h1 className="display-4 text-center">Edit News</h1>
               <p className="lead text-center">
-                  Update Book's Info
+                  Update News Info
               </p>
             </div>
           </div>

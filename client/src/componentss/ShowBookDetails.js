@@ -93,16 +93,15 @@ class showBookDetails extends Component {
             <div className="col-md-10 m-auto">
               <br /> <br />
               <Link to="/bk" className="btn btn-outline-warning float-left">
-                  Show Book List
+                  Show News List
               </Link>
             </div>
             <br />
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Book's Record</h1>
+              <h4 className="text-center">News Record</h4>
               <p className="lead text-center">
-                  View Book's Info
+                  View News Info
               </p>
-              <hr /> <br />
             </div>
           </div>
           <div>

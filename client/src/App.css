@@ -1071,3 +1071,13 @@ button {
   font-size: 1em;
   padding: 10px 0 10px 0;
 }
+
+
+.contain {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 3rem;
+}

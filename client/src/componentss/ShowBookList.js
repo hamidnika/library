@@ -40,7 +40,7 @@ class ShowBookList extends Component {
     }
 
     return (
-      <div className="ShowBookList container rounded">
+      <div className="ShowBookList contain rounded">
         
           <div className="row">
             <div className="col-md-10">
