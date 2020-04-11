@@ -9,9 +9,9 @@ const app = express();
 connectDB();
 
 // Init Middleware
-app.use(express.json({ extended: true }));
-/* app.use(express.json());
- */
+app.use(express.json({ extended: false }));
+
+
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
