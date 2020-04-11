@@ -134,7 +134,7 @@ class CreateBook extends Component {
 
                 <button
                     type="submit"
-                    className="btn btn-outline-warning btn-block mt-4">create book</button>
+                    className="btn btn-outline-warning btn-block mt-4">create News</button>
                    
               </form>
           </div>
