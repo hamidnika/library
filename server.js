@@ -15,9 +15,6 @@ app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
-  });
 }
 
 app.get("/", (req, res) => res.send("API running"));
@@ -39,7 +36,9 @@ app.use('/api/bookss', require('./routes/api/books'));
 
 // Define API routes here
 app.use("/api", apiRoutes);
-
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
+});
 
 
 const PORT = process.env.PORT || 5000;
