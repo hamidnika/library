@@ -14,7 +14,11 @@ class ShowBookList extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:5000/api/bookss')
+      .get('http://localhost:5000/api/bookss',{
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      }
+    })
       .then(res => {
         this.setState({
           books: res.data
