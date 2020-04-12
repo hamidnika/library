@@ -40,23 +40,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
 
-app.get('/bk', (req, res) => {
-  request(
-    { url: 'https://cors-anywhere.herokuapp.com/http://localhost:3000/bk' },
-    (error, response, body) => {
-      if (error || response.statusCode !== 200) {
-        return res.status(500).json({ type: 'error', message: err.message });
-      }
-
-      res.json(JSON.parse(body));
-    }
-  )
-});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
