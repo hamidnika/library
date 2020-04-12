@@ -14,7 +14,14 @@ class showBookDetails extends Component {
   componentDidMount() {
     // console.log("Print id: " + this.props.match.params.id);
     axios
-      .get('http://localhost:5000/api/bookss/'+this.props.match.params.id)
+      .get('http://localhost:5000/api/bookss/'+this.props.match.params.id,{
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Headers": "Access-Control-*, Origin, X-Requested-With, Content-Type, Accept",
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
+          'Allow': 'GET, POST, PUT, DELETE, OPTIONS, HEAD'
+        }
+      })
       .then(res => {
         // console.log("Print-showBookDetails-API-response: " + res.data);
         this.setState({

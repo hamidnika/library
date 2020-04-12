@@ -34,7 +34,14 @@ class CreateBook extends Component {
     };
 
     axios
-      .post('http://localhost:5000/api/bookss', data)
+      .post('http://localhost:5000/api/bookss', data, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          "Access-Control-Allow-Headers": "Access-Control-*, Origin, X-Requested-With, Content-Type, Accept",
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS, HEAD',
+          'Allow': 'GET, POST, PUT, DELETE, OPTIONS, HEAD'
+        }
+      })
       .then(res => {
         this.setState({
           title: '',
