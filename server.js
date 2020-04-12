@@ -42,9 +42,9 @@ app.use(function(req, res, next) {
 // Define API routes here
 app.use("/api", apiRoutes);
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build"));
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-/* /index.html */
+
 
 const PORT = process.env.PORT || 5000;
 
