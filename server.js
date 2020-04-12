@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require('body-parser');
 const connectDB = require("./config/db");
 const apiRoutes = require("./routes/api-routes");
 const path = require("path");
@@ -26,24 +27,24 @@ app.use("/api/profile", require("./routes/api/profile"));
 
 
 
-  
+app.use(bodyParser.json());  
 var cors = require('cors');
 app.use(cors({ origin: true, credentials: true }));
 
 // use Routes
 app.use('/api/bookss', require('./routes/api/books'));
 
-app.use(function(req, res, next) {
+/* app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
-});
+}); */
 // Define API routes here
 app.use("/api", apiRoutes);
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(path.join(__dirname, "./client/build"));
 });
-
+/* /index.html */
 
 const PORT = process.env.PORT || 5000;
 
