@@ -4,11 +4,6 @@ const apiRoutes = require("./routes/api-routes");
 const path = require("path");
 const app = express();
 
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  next();
-});
-
 
 // express Connect Database
 connectDB();
