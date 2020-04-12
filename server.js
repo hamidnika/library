@@ -47,7 +47,7 @@ app.use((req, res, next) => {
 
 app.get('/bk', (req, res) => {
   request(
-    { url: 'http://localhost:3000/bk' },
+    { url: 'https://cors-anywhere.herokuapp.com/http://localhost:3000/bk' },
     (error, response, body) => {
       if (error || response.statusCode !== 200) {
         return res.status(500).json({ type: 'error', message: err.message });
