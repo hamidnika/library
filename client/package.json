@@ -39,8 +39,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -60,8 +59,5 @@
   "proxy": "http://localhost:5000",
   "devDependencies": {
     "react-social-icons": "^4.1.0"
-  },
-  "engines": {
-    "node": "10.16.0"
-}
+  }
 }
