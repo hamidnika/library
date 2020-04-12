@@ -29,10 +29,10 @@ import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
-import CreateBook from './componentss/CreateBook';
-import ShowBookList from './componentss/ShowBookList';
-import ShowBookDetails from './componentss/ShowBookDetails';
-import UpdateBookInfo from './componentss/UpdateBookInfo';
+import CreateBook from './components/CreateBook';
+import ShowBookList from './components/ShowBookList';
+import ShowBookDetails from './components/ShowBookDetails';
+import UpdateBookInfo from './components/UpdateBookInfo';
 
 if (localStorage.token) {
   setAuthToken(localStorage.token);

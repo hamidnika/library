@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col } from 'react-bootstrap';
+//import { Col } from 'react-bootstrap';
 import './Posts.css';
 
 export default class Gallery extends Component {
