@@ -4,6 +4,11 @@ const apiRoutes = require("./routes/api-routes");
 const path = require("path");
 const app = express();
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 
 // express Connect Database
 connectDB();
@@ -40,18 +45,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-// Listen on a specific host via the HOST environment variable
-var host = process.env.HOST || '0.0.0.0';
+
 const PORT = process.env.PORT || 5000;
 
-var cors_proxy = require('cors-anywhere');
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-    requireHeader: ['origin', 'x-requested-with'],
-    removeHeaders: ['cookie', 'cookie2']
-}).listen(PORT, host, function() {
-    console.log('Running CORS Anywhere on ' + host + ':' + PORT);
-});
-
-
-//app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
+app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));

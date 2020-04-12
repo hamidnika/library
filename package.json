@@ -42,6 +42,12 @@
     "uuidv4": "^6.0.2",
     "validation": "0.0.1"
   },
+  "proxy": {
+    "/api": {
+      "target": "https://localhost:5000",
+      "secure": false
+    }
+  },
   "devDependencies": {
     "concurrently": "^5.0.2",
     "eslint-plugin-react-hooks": "0.0.0-b53ea6ca0",
