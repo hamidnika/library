@@ -40,7 +40,18 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-
+// Listen on a specific host via the HOST environment variable
+var host = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
+var cors_proxy = require('cors-anywhere');
+cors_proxy.createServer({
+    originWhitelist: [], // Allow all origins
+    requireHeader: ['origin', 'x-requested-with'],
+    removeHeaders: ['cookie', 'cookie2']
+}).listen(PORT, host, function() {
+    console.log('Running CORS Anywhere on ' + host + ':' + PORT);
+});
+
+
+//app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
