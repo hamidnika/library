@@ -3,7 +3,7 @@ const connectDB = require("./config/db");
 const apiRoutes = require("./routes/api-routes");
 const path = require("path");
 const app = express();
-
+const mongoose = require("mongoose");
 
 // express Connect Database
 connectDB();
@@ -41,6 +41,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
+mongoose.connect("mongodb://http://mernudem.herokuapp.com")
 
 const PORT = process.env.PORT || 5000;
 
