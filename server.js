@@ -41,7 +41,7 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect("mongodb://http://mernudem.herokuapp.com")
+mongoose.connect("mongodb+srv://http://mernudem.herokuapp.com")
 
 const PORT = process.env.PORT || 5000;
 
