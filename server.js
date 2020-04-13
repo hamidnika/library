@@ -9,7 +9,8 @@ const app = express();
 connectDB();
 
 // Init Middleware
-app.use(express.json({ extended: false }));
+app.use(express.urlencoded({ extended: true}))
+app.use(express.json({ extended: true }));
 
 
 // Serve up static assets (usually on heroku)
