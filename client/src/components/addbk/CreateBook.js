@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
 import axios from 'axios';
-
+import FileUpload from './FileUpload';
 
 class CreateBook extends Component {
   constructor() {
@@ -64,9 +64,10 @@ class CreateBook extends Component {
             </div>
             <div className="col-md-8 m-auto">
               <h4 className="text-center">Add News</h4>
-
               <form noValidate onSubmit={this.onSubmit}>
+              <FileUpload />
                 <div className='form-group'>
+                
                   <input
                     type='text'
                     placeholder='Title of the Book'
