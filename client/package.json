@@ -59,5 +59,10 @@
   "devDependencies": {
     "atomize": "^1.0.20",
     "react-social-icons": "^4.1.0"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+    }
+  ]
 }
