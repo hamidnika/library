@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
     "eslint-plugin-react-hooks": "0.0.0-b53ea6ca0",
     "nodemon": "^2.0.2"
   }
