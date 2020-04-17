@@ -61,9 +61,6 @@ app.get("*", (req, res) => {
 });
 
 
-/* const PORT = process.env.PORT || 5000; */
-app.set( 'port', ( process.env.PORT || 5000 ));
-//app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
-app.listen( app.get( 'port' ), function() {
-  console.log( 'Node server is running on port ' + app.get( 'port' ));
-  });
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
