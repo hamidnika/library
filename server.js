@@ -1,6 +1,5 @@
 const express = require("express");
 const connectDB = require("./config/db");
-const apiRoutes = require("./routes/api-routes");
 const path = require("path");
 const app = express();
 const fileUpload = require('express-fileupload');
@@ -26,7 +25,8 @@ app.post('/upload', (req, res) => {
 
 // express Connect Database
 connectDB();
-
+var cors = require('cors');
+app.use(cors({ origin: true, credentials: true }));
 // Init Middleware
 //app.use(express.urlencoded({ extended: true}))
 app.use(express.json({ extended: true }));
@@ -35,6 +35,12 @@ app.use(express.json({ extended: true }));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
+  app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Allow-Methods", "GET, POST");
+    next();
+  });
 }
 
 app.get("/", (req, res) => res.send("API running"));
@@ -43,24 +49,20 @@ app.get("/", (req, res) => res.send("API running"));
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
+app.use('/api/bookss', require('./routes/api/books'));
+app.use("/api", require("./routes/api-routes"));
 
 
 
   
-var cors = require('cors');
-app.use(cors({ origin: true, credentials: true }));
+
 
 // use Routes
-app.use('/api/bookss', require('./routes/api/books'));
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  res.header("Access-Control-Allow-Methods", "GET, POST");
-  next();
-});
+
+
 
 // Define API routes here
-app.use("/api", apiRoutes);
+
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
