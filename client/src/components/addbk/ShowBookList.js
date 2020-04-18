@@ -13,8 +13,13 @@ class ShowBookList extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get('http://localhost:5000/api/bookss')
+    const options = {
+      method: 'GET',
+      headers: {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Allow-Methods": "GET, POST" },
+     /*  data: qs.stringify(data), */
+      url:'http://localhost:5000/api/bookss',
+    };
+    axios(options)
       .then(res => {
         this.setState({
           books: res.data
