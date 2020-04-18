@@ -33,13 +33,8 @@ class CreateBook extends Component {
       publisher: this.state.publisher
     };
 
-    const options = {
-      method: 'POST',
-      headers: {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Headers": "Content-Type", "Access-Control-Allow-Methods": "GET, POST" },
-     data: data,
-      url:'http://localhost:5000/api/bookss',
-    };
-    axios(options)
+    axios
+      .post('http://localhost:5000/api/bookss', data)
       .then(res => {
         this.setState({
           title: '',

@@ -25,8 +25,7 @@ app.post('/upload', (req, res) => {
 
 // express Connect Database
 connectDB();
-var cors = require('cors');
-app.use(cors({ origin: true, credentials: true }));
+
 // Init Middleware
 //app.use(express.urlencoded({ extended: true}))
 app.use(express.json({ extended: true }));
@@ -35,12 +34,6 @@ app.use(express.json({ extended: true }));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
-  app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Content-Type");
-    res.header("Access-Control-Allow-Methods", "GET, POST");
-    next();
-  });
 }
 
 app.get("/", (req, res) => res.send("API running"));
@@ -55,7 +48,8 @@ app.use("/api", require("./routes/api-routes"));
 
 
   
-
+var cors = require('cors');
+app.use(cors({ origin: true, credentials: true }));
 
 // use Routes
 
