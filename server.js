@@ -33,7 +33,9 @@ app.use(express.json({ extended: true }));
 
 
 // Serve up static assets (usually on heroku)
-
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "./client/build")));
+}
 
 app.get("/", (req, res) => res.send("API running"));
 var cors = require('cors');
@@ -57,9 +59,7 @@ app.use("/api", apiRoutes);
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "./client/build")));
-}
+
 
 const PORT = process.env.PORT || 5000;
 
