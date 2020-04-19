@@ -35,6 +35,8 @@ app.use(express.json({ extended: true }));
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
+  app.use(express.static(path.join(__dirname, "./client/public")));
+  app.use(express.static(path.join(__dirname, "./client/src")));
 }
 
 app.get("/", (req, res) => res.send("API running"));
