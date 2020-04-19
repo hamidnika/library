@@ -38,11 +38,8 @@ app.use(cors({ origin: true, credentials: true }))
 app.get("/", (req, res) => res.send("API running"));
 
 // define routes
-app.use("/api/users", require("./routes/api/users"));
-app.use("/api/auth", require("./routes/api/auth"));
-app.use("/api/profile", require("./routes/api/profile"));
-app.use('/api/bookss', require('./routes/api/books'));
-app.use("/api", require("./routes/api-routes"));
+
+
 
 
   // Serve up static assets (usually on heroku)
@@ -52,8 +49,11 @@ if (process.env.NODE_ENV === "production") {
 
 
 // use Routes
-
-
+app.use("/api/users", require("./routes/api/users"));
+app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/profile", require("./routes/api/profile"));
+app.use('/api/bookss', require('./routes/api/books'));
+app.use("/api", require("./routes/api-routes"));
 
 
 // Define API routes here
