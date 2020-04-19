@@ -33,11 +33,11 @@ app.use(express.json({ extended: true }));
 
 
 // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
+/* if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
   app.use(express.static(path.join(__dirname, "./client/public")));
   app.use(express.static(path.join(__dirname, "./client/src")));
-}
+} */
 
 app.get("/", (req, res) => res.send("API running"));
 var cors = require('cors');
@@ -55,7 +55,11 @@ app.use("/api/profile", require("./routes/api/profile"));
 // use Routes
 app.use('/api/bookss', require('./routes/api/books'));
 
-
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "./client/build")));
+  app.use(express.static(path.join(__dirname, "./client/public")));
+  app.use(express.static(path.join(__dirname, "./client/src")));
+}
 // Define API routes here
 app.use("/api", apiRoutes);
 app.get("*", (req, res) => {
