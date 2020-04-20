@@ -32,10 +32,10 @@ connectDB();
 app.use(express.json({ extended: true }));
 
 
-// Serve up static assets (usually on heroku)
+/* // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
-}
+} */
 
 app.get("/", (req, res) => res.send("API running"));
 var cors = require('cors');
@@ -56,11 +56,16 @@ app.use('/api/bookss', require('./routes/api/books'));
 
 // Define API routes here
 app.use("/api", apiRoutes);
-app.get("*", (req, res) => {
+/* app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+}); */
 
-
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'));
+  app.get('*', (res, req) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  })
+}
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server run ${PORT} Successfully`));
