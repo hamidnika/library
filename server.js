@@ -32,8 +32,8 @@ connectDB();
 app.use(express.json({ extended: true }));
 
 
-/* // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
+// Serve up static assets (usually on heroku)
+/* if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "./client/build")));
 } */
 
@@ -61,7 +61,7 @@ app.use("/api", apiRoutes);
 }); */
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'));
+  app.use(express.static(path.join(__dirname, "./client/build")));
   app.get('*', (res, req) => {
     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
   })
