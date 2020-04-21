@@ -44,6 +44,7 @@ class ShowBookList extends Component {
         
           <div className="row">
             <div className="col-md-10">
+            <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning elem">Latest News of Corona in the world</a>
               <h3 className="text-center mt-2 pt-2">News of Persian Communities in Germany</h3>
             </div>
 

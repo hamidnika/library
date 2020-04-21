@@ -8,7 +8,7 @@ export default class Gallery extends Component {
   
         <div>
           <div className="pics">
-    <iframe title="video" width="200" height="auto" src="https://www.youtube.com/embed/6xrJy-1_qS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe title="video" width="200" height="auto" src="https://www.youtube.com/embed/01_L4tQ7F3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="video" width="200" height="auto" src="https://www.youtube.com/embed/9Auq9mYxFEE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="video1" width="200" height="auto" src="https://www.youtube.com/embed/TE5d4omulHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <iframe title="video2" width="200" height="auto" src="https://www.youtube.com/embed/TwfPb9rsDyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

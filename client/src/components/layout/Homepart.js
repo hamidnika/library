@@ -49,8 +49,9 @@ export default class Homepart extends Component {
               <img src={require('./newss.jpg')} class="img-fluid responsive" alt="asso"/>
                 </div> 
                 <h6 className="text-white bg-dark p-2 text-center ani">News of the World</h6>
-                <p className="card-text text-white">In this section you can have access to the News and latest developments of lots of countries.</p>
-              <a href="https://hamidnika.github.io/newsdaily/" className="btn btn-dark text-warning elem">Read more ...</a>
+                <a href="https://hamidnika.github.io/newsdaily/" className="btn btn-dark text-warning elem">Read more ...</a>
+                <p className="card-text text-white">access to News and latest developments of countries.</p>
+              <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning elem">Latest News of Corona in the world</a>
               
             </div>
           </div>

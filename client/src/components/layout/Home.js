@@ -41,7 +41,7 @@ export default class Home extends Component {
         <div className="col-md-4">
         	<div className="card bg-secondary text-white">
           <div className="card-body">
-          <p className="card-text">Foundation looks at the state of global at the state of global development.</p>
+          <p className="card-text">search and save your favorite books to enreach our database.</p>
           <h6 className="btn bg-dark p-2 text-center"><Link to="/search" className="btn bg-dark text-white">Search and save Books from GoogleBooks API <h3><FaSearch /></h3></Link></h6>
           <h6 className="btn bg-dark p-2 text-center"><Link to="/saved" className="btn bg-dark text-white">See the Saved Books by Users from GoogleBooks API <h3><FaRegSave /></h3></Link></h6>
                   
