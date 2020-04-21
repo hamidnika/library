@@ -50,7 +50,7 @@ export default class Homepart extends Component {
                 </div> 
                 <h6 className="text-white bg-dark p-2 text-center ani">News of the World</h6>
                 <p className="card-text text-white">In this section you can have access to the News and latest developments of lots of countries.</p>
-              <Link to="/posts" className="btn glow-on-hover">Read more ...</Link>
+              <a href="https://hamidnika.github.io/newsdaily/" className="btn btn-dark text-warning elem">Read more ...</a>
               
             </div>
           </div>
