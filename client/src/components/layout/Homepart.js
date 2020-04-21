@@ -36,7 +36,7 @@ export default class Homepart extends Component {
         	<div className="card bg-secondary">
           <div className="card-body">
   
-					<h1 className="card-title assotilte p-2 text-center text-3d">Chat <a href="http://hamid88.herokuapp.com/about.html" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
+					<h1 className="card-title assotilte p-2 text-center text-3d">Chat <a href="https://rocky-shelf-85720.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
 				  <p className="card-text text-white">You can chat with others to make connection and also naturally you can ask about your needs in Germany and share your experiences with others.</p>
           </div>
 				</div>
