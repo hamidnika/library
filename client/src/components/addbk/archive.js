@@ -12,7 +12,7 @@ class Archive extends Component {
       books: []
     };
   }
-  //https://mernudem.herokuapp.com/api/bookss
+
   componentDidMount() {
     axios
       .get('https://mernudem.herokuapp.com/api/bookss/archive')
@@ -46,18 +46,7 @@ class Archive extends Component {
       <div className="ShowBookList contain rounded">
        {/*   <FileUpload /> */}
           <div className="row">
-            <div className="col-md-10 col-sm-10">
-            <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning">Latest News of Corona in the world</a>
-              <h4 className="text-center mt-2 pt-2">News of Persian Communities in Germany</h4>
-            </div>
-
-            <div className="col-md-2 col-sm-2 mt-2">
-            <p className="purpllle rounded m-0">Just members can upload News<Link to="/create-book" className="btn">
-              + Add News
-            </Link></p>
-              
-             
-            </div>
+              <h4 className="m-2 rounded bg-success">News of Persian Communities in Germany (ARCHIVE)</h4>
 
           </div>
 
