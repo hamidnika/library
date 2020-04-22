@@ -15,7 +15,7 @@ class Archive extends Component {
   //https://mernudem.herokuapp.com/api/bookss
   componentDidMount() {
     axios
-      .get('http://localhost:3000/api/bookss/archive')
+      .get('https://mernudem.herokuapp.com/api/bookss/archive')
       .then(res => {
         this.setState({
           books: res.data
