@@ -13,8 +13,8 @@ export default class Homepart extends Component {
               <div> 
               <img src={require('./news.jpg')} class="img-fluid responsive" alt="asso"/>
                 </div> 
-                <h6 className="text-white bg-dark p-2 text-center ani">News of Persian Associations in Germany</h6>
-              <Link to="/bk" className="btn buttnhome1 glow-on-hover">Read more ...</Link>
+                <h6 className="text-white bg-dark p-2 text-center">News of Persian Associations in Germany</h6>
+              <Link to="/bk" className="btn buttnhome1 text-warning elem">Read more ...</Link>
               
             </div>
           </div>
@@ -48,10 +48,10 @@ export default class Homepart extends Component {
               <div> 
               <img src={require('./newss.jpg')} class="img-fluid responsive" alt="asso"/>
                 </div> 
-                <h6 className="text-white bg-dark p-2 text-center ani">News of the World</h6>
+                <h6 className="text-white bg-dark p-2 text-center">News of the World</h6>
                 <a href="https://hamidnika.github.io/newsdaily/" className="btn btn-dark text-warning elem">Read more ...</a>
                 <p className="card-text text-white">access to News and latest developments of countries.</p>
-              <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning elem">Latest News of Corona in the world</a>
+              <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning rounded">Latest News of Corona in the world</a>
               
             </div>
           </div>

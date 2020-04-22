@@ -31,6 +31,7 @@ import './App.css';
 
 import CreateBook from './components/addbk/CreateBook';
 import ShowBookList from './components/addbk/ShowBookList';
+import Archive from './components/addbk/archive';
 import ShowBookDetails from './components/addbk/ShowBookDetails';
 import UpdateBookInfo from './components/addbk/UpdateBookInfo';
 
@@ -56,6 +57,7 @@ const App = () => {
      <Alert /> 
     <Switch>
     <Route exact path='/bk' component={ShowBookList} />
+    <Route exact path='/archive' component={Archive} />
     <PrivateRoute path='/create-book' component={CreateBook} />
     <PrivateRoute path='/edit-book/:id' component={UpdateBookInfo} />
     <PrivateRoute path='/show-book/:id' component={ShowBookDetails} />

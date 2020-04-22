@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 import BookCard from './BookCard';
 /* import FileUpload from './FileUpload'; */
 
-class ShowBookList extends Component {
+class Archive extends Component {
   constructor(props) {
     super(props);
     this.state = {
       books: []
     };
   }
-
+  //https://mernudem.herokuapp.com/api/bookss
   componentDidMount() {
     axios
-      .get('https://mernudem.herokuapp.com/api/bookss')
+      .get('http://localhost:3000/api/bookss/archive')
       .then(res => {
         this.setState({
           books: res.data
@@ -71,4 +71,4 @@ class ShowBookList extends Component {
   }
 }
 
-export default ShowBookList;
+export default Archive;

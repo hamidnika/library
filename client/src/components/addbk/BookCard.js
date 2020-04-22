@@ -7,21 +7,18 @@ const BookCard = (props) => {
     const  book  = props.book;
 
     return(
-        <div className="">
+        <div className="purplle rounded m-2">
           
-            <div className="desc">
-                     
-                <h2>
-                    <Link className="text-white purplle" to={`/show-book/${book._id}`}>
+            
+            <h2>
+                    <Link className="text-white m-2" to={`/show-book/${book._id}`}>
                         {book.title}
                     </Link>
                 </h2>
-                <h3 className="text-white purplle rounded">Writer: {book.authors}</h3>
-               
-            </div>
-             <p className="text-white purplle justified text-left rounded">{book.description}</p>
-             <p className="text-white purplle rounded">Source: {book.publisher}</p>
-             <p className="text-white purplle rounded">Date: {book.published_date}</p>
+                <p className="text-white m-2">Writer: {book.authors}</p>
+             <p className="text-white justified text-left m-2">{book.description}</p>
+             <p className="text-white m-2">Source: {book.publisher}</p>
+             <p className="text-white m-2">Date: {book.published_date}</p>
         </div>
     )
 };

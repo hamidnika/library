@@ -42,7 +42,7 @@ class showBookDetails extends Component {
 
     const book = this.state.book;
     let BookItem = <div>
-      <table className="table table-hover table-dark">
+      <table className="">
         {/* <thead>
           <tr>
             <th scope="col">#</th>
@@ -53,32 +53,32 @@ class showBookDetails extends Component {
         </thead> */}
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row"></th>
             <td>Title</td>
             <td>{ book.title }</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope="row"></th>
             <td>Author</td>
             <td>{ book.authors }</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope="row"></th>
             <td>ISBN</td>
             <td>{ book.isbn }</td>
           </tr>
           <tr>
-            <th scope="row">4</th>
+            <th scope="row"></th>
             <td>Publisher</td>
             <td>{ book.publisher }</td>
           </tr>
           <tr>
-            <th scope="row">5</th>
+            <th scope="row"></th>
             <td>Published Date</td>
             <td>{ book.published_date }</td>
           </tr>
           <tr>
-            <th scope="row">6</th>
+            <th scope="row"></th>
             <td>Description</td>
             <td>{ book.description }</td>
           </tr>
@@ -88,6 +88,7 @@ class showBookDetails extends Component {
 
     return (
       <div className="ShowBookDetails">
+      
         <div className="container">
           <div className="row">
             <div className="col-md-10 m-auto">

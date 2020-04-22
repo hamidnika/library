@@ -29,6 +29,22 @@ router.get("/", (req, res) => {
     .catch(err => res.status(404).json({ nobooksfound: "No Books found" }));
 });
 
+var Start = new Date("1900-01-01");
+Start.setSeconds(0);
+Start.setHours(0);
+Start.setMinutes(0);
+Start.setMilliseconds(0);
+
+var End = new Date();
+End.setHours(23);
+End.setMinutes(59);
+End.setSeconds(59);
+End.setMilliseconds(999);
+router.get("/archive", (req, res) => {
+  Bookk.find({"published_date": {$gte: new Date(Start).toISOString(),$lte: new Date(End).toISOString()}})
+    .then(books => res.json(books))
+    .catch(err => res.status(404).json({ nobooksfound: "No Books found" }));
+});
 // @route GET api/books/:id
 // @description Get single book by id
 // @access Public
