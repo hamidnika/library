@@ -34,7 +34,7 @@ class CreateBook extends Component {
     };
 
     axios
-      .post('http://localhost:5000/api/bookss', data)
+      .post('https://mernudem.herokuapp.com/api/bookss', data)
       .then(res => {
         this.setState({
           title: '',
