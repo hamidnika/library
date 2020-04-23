@@ -812,8 +812,8 @@ button {
 }
 
 .responsive {
+  width: 200px;
   height: "auto";
-  width: 400px;
 }
 
 .respons {
