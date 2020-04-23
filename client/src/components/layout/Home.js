@@ -10,7 +10,7 @@ export default class Home extends Component {
      
         <div className="row">
         <Homepart/>
-          <div className="col-md-4 bg-secondary">
+          <div className="col-md-4 bg-secondary mt-2">
             <div className="card-body">
              
                <div className="pics">
@@ -27,7 +27,7 @@ export default class Home extends Component {
           </div>
 
       <div className="col-md-4">
-<div className="card bg-secondary">
+<div className="card bg-secondary mt-2">
   <div className="card-body">
   <h6 className="bg-secondary p-2 text-white font-weight-bold text-center">We Will have Live Streaming <i class="fas fa-tv"></i></h6>
     <iframe title="my video" className="img-fluid" width="260" height="auto" src="https://www.youtube.com/embed/s1-foVKep2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -37,7 +37,7 @@ export default class Home extends Component {
 </div>
 
         <div className="col-md-4">
-        	<div className="card bg-secondary text-white">
+        	<div className="card bg-secondary text-white mt-2">
           <div className="card-body">
           <p className="card-text">Search and save your favorite books to enreach our database.</p>
           <h6 className="btn bg-dark p-2 text-center"><Link to="/search" className="btn bg-dark text-white">Search and save Books from GoogleBooks API <h3><FaSearch /></h3></Link></h6>

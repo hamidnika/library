@@ -24,8 +24,9 @@ export default class Homepart extends Component {
         <div className="col-md-3">
           <div className="card bg-secondary rounded">
             <div className="card-body">
-              <h6 className="card-title p-2 text-center text-white font-weight-bold">About Persian Associations</h6>
+
               <img src={require('./associations.jpg')} class="img-fluid responsive" alt="asso"/>
+              <p className="card-text text-white pt-2 m-0 font-weight-bold">Who Are We?</p>
               <p className="card-text text-white">We make network among Persians in Germany.</p>
               
               <Link to="/about" className="btn bg-secondary text-wraning text-white font-weight-bold"> Read More ...</Link>
@@ -37,8 +38,8 @@ export default class Homepart extends Component {
         	<div className="card bg-secondary rounded">
           <div className="card-body">
   
-					<h1 className="card-title p-2 text-center font-weight-bold text-warning">Chat<a href="https://rocky-shelf-85720.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
-				  <p className="card-text text-white">chat with others to make connection and naturally ask about your needs in Germany and share your experiences with others.</p>
+					<h1 className="card-title p-2 text-center font-weight-bold text-warning m-0">Chat<a href="https://rocky-shelf-85720.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a><span>&#128525;&#128512;&#128523;</span></h1>
+				  <p className="card-text text-white m-0 p-0">Chat with others to make connection and naturally ask about your needs in Germany and share your experiences with others.</p>
           </div>
 				</div>
         </div>
