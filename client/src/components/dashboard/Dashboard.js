@@ -41,7 +41,7 @@ const Dashboard = ({
         </Fragment>
       ) : (
         <Fragment>
-          <p className="text-warning bg-dark">Make your profile and add some information</p>
+          <p className="text-warning ml-2">Make your profile and add some information</p>
           <Link to='/create-profile' className='btn btn-dark text-white pl-2'>
             Create Profile
           </Link>
