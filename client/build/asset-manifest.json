@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9fdbf59.chunk.css",
+    "main.css": "/static/css/main.ade298a7.chunk.css",
     "main.js": "/static/js/main.f5d7e386.chunk.js",
     "main.js.map": "/static/js/main.f5d7e386.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.194504c1.js",
@@ -8,9 +8,9 @@
     "static/js/2.09102260.chunk.js": "/static/js/2.09102260.chunk.js",
     "static/js/2.09102260.chunk.js.map": "/static/js/2.09102260.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.422589c7bf36533ab7aeffa867fe7e79.js": "/precache-manifest.422589c7bf36533ab7aeffa867fe7e79.js",
+    "precache-manifest.23f79adb832f35f332de9ffe287ae578.js": "/precache-manifest.23f79adb832f35f332de9ffe287ae578.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.b9fdbf59.chunk.css.map": "/static/css/main.b9fdbf59.chunk.css.map",
+    "static/css/main.ade298a7.chunk.css.map": "/static/css/main.ade298a7.chunk.css.map",
     "static/js/2.09102260.chunk.js.LICENSE": "/static/js/2.09102260.chunk.js.LICENSE",
     "static/media/Nikou.jpg": "/static/media/Nikou.398e4068.jpg",
     "static/media/associations.jpg": "/static/media/associations.b02aa144.jpg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.194504c1.js",
     "static/js/2.09102260.chunk.js",
-    "static/css/main.b9fdbf59.chunk.css",
+    "static/css/main.ade298a7.chunk.css",
     "static/js/main.f5d7e386.chunk.js"
   ]
 }
