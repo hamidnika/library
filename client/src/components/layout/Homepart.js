@@ -5,7 +5,7 @@ export default class Homepart extends Component {
     render() {
         return (
             <div>
-              <div className="p-2 bg-secondary">
+              <div className="p-2 bg-secondary rounded">
                  <div className="row">
         <div className="col-md-3">
         <div className="card bg-secondary rounded">

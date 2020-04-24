@@ -47,13 +47,13 @@ class ShowBookList extends Component {
        {/*   <FileUpload /> */}
           <div className="row">
             <div className="col-md-10 col-sm-10">
-              <h4 className="text-center mt-2 pt-2">News of Persian Communities in Germany</h4>
-              <Link to="/archive" className="btn bg-success">Archive of News</Link>
-              <a href="https://hamidnika.github.io/coronaintera/" className="btn btn-dark text-warning">Latest News of Corona in the world</a>
+              <h5 className="text-center mt-2 pt-2 font-weight-bold">News of Persian Communities in Germany</h5>
+              <Link to="/archive" className="btn text-warning purplle">Archive of News</Link>
+              <a href="https://hamidnika.github.io/coronaintera/" className="btn text-warning purpllle">Latest News of Corona in the world</a>
             </div>
 
             <div className="col-md-2 col-sm-2 mt-2">
-            <p className="purpllle rounded m-0">Just members can upload News<Link to="/create-book" className="btn">
+            <p className="purpllle rounded m-0 p-1">Just members can upload News<Link to="/create-book" className="btn text-white purpllle p-0">
               + Add News
             </Link></p>
               

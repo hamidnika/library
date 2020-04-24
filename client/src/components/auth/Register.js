@@ -32,7 +32,7 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <div className="purpllle">
+      <div className="purpllle dashboard">
       <h4 className="text-white pl-2">Register</h4>
       <p className="text-white pl-2">
         <i className="fas fa-user" /> Create Your Account

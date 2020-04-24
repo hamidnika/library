@@ -22,7 +22,7 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <div className="purpllle rounded">
+      <div className="purpllle rounded dashboard">
       <h5 className='text-white pl-2'>Information about Members</h5>
       <h5 className='text-white pl-2'>
        Welcome {user && user.name}

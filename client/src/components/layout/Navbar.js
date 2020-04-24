@@ -8,7 +8,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
       <ul className="nav navbar-collapse hii">
         
-        <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
+{/*         <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/> */}
+        <h3 className="handwrite text-warning p-3 m-0">BookLook</h3>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
@@ -52,7 +53,8 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const guestLinks = (
 
       <ul className="nav navbar-collapse hii">
-<img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/>
+{/* <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/> */}
+<h3 className="handwrite text-warning p-3 m-0">BookLook</h3>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>

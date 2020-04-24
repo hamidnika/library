@@ -24,7 +24,7 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <div className="purpllle">
+      <div className="purpllle dashboard">
       <h4 className="text-white">Login</h4>
       <p className="text-white">
         <i className="fas fa-user" /> Login Into Your Account

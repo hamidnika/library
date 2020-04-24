@@ -11,10 +11,10 @@ const Landing = ({ isAuthenticated }) => {
         <section className="landing">
       <div className="dark-overlay mb-0">
         <div className="landing-inner">
-          <h3 className="text-warning">Become Member of Persian Associations</h3>
-          <p className="lead text-warning">
+        <h6 className="text-warning font-weight-bold handwrite">
             Welcome to BookLook
-          </p>
+          </h6>
+          <h5 className="text-white font-weight-bold">Become Member of Persian Associations</h5>
           <div>
             <Link to="/register" className="btn bg-dark text-white">
               Register
