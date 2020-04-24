@@ -36,7 +36,7 @@ export default class Homepart extends Component {
           
           <div className="col-md-3">
         	<div className="card bg-secondary rounded p-0 m-0">
-          <div className="card-body p-0 m-0">
+          <div className="card-body pt-1 mt-1">
   
 					<h1 className="card-title text-center font-weight-bold text-warning m-0 pt-0">Chat<a href="https://rocky-shelf-85720.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a></h1>
           <p className="text-center display-5"><span>&#128525;&#128512;&#128523;</span></p>
@@ -46,7 +46,7 @@ export default class Homepart extends Component {
         </div>
         <div className="col-md-3">
           <div className="card bg-secondary rounded">
-            <div className="card-body p-0">
+            <div className="card-body pt-1 mt-1">
 
               <div> 
               <img src={require('./newss.jpg')} class="img-fluid responsive rounded" alt="asso"/>
