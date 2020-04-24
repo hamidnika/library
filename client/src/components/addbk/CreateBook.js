@@ -58,19 +58,19 @@ class CreateBook extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <br />
-              <Link to="/bk" className="btn btn-outline-warning float-left">
+              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
                   Show News List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h4 className="text-center">Add News</h4>
+              <h5 className="text-center">Add your Own News</h5>
               <form noValidate onSubmit={this.onSubmit}>
               
                 <div className='form-group'>
                 
                   <input
                     type='text'
-                    placeholder='Title of the Book'
+                    placeholder='Title of the News'
                     name='title'
                     className='form-control'
                     value={this.state.title}
@@ -82,7 +82,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='ISBN'
+                    placeholder='Code of News'
                     name='isbn'
                     className='form-control'
                     value={this.state.isbn}
@@ -104,7 +104,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Describe this book'
+                    placeholder='Text of News'
                     name='description'
                     className='form-control'
                     value={this.state.description}
@@ -115,7 +115,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='date'
-                    placeholder='published_date'
+                    placeholder='Date of News'
                     name='published_date'
                     className='form-control'
                     value={this.state.published_date}
@@ -125,7 +125,7 @@ class CreateBook extends Component {
                 <div className='form-group'>
                   <input
                     type='text'
-                    placeholder='Publisher of this Book'
+                    placeholder='Publisher of News'
                     name='publisher'
                     className='form-control'
                     value={this.state.publisher}
@@ -135,7 +135,7 @@ class CreateBook extends Component {
 
                 <button
                     type="submit"
-                    className="btn btn-outline-warning btn-block mt-4">create News</button>
+                    className="btn btn-outline-warning purplle text-warning btn-block mt-4">Create News</button>
                    
               </form>
           </div>

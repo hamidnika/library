@@ -51,35 +51,35 @@ class showBookDetails extends Component {
             <th scope="col">Handle</th>
           </tr>
         </thead> */}
-        <tbody>
-          <tr>
+        <tbody >
+          <tr className="border">
             <th scope="row"></th>
-            <td>Title</td>
+            <td className="p-2">Title</td>
             <td>{ book.title }</td>
           </tr>
-          <tr>
+          <tr className="border">
             <th scope="row"></th>
-            <td>Author</td>
+            <td className="p-2">Authors</td>
             <td>{ book.authors }</td>
           </tr>
-          <tr>
+          <tr className="border">
             <th scope="row"></th>
-            <td>ISBN</td>
+            <td className="p-2">Code Of News</td>
             <td>{ book.isbn }</td>
           </tr>
-          <tr>
+          <tr className="border">
             <th scope="row"></th>
-            <td>Publisher</td>
+            <td className="p-2">Publisher</td>
             <td>{ book.publisher }</td>
           </tr>
-          <tr>
+          <tr className="border">
             <th scope="row"></th>
-            <td>Published Date</td>
+            <td className="p-2">Date of News</td>
             <td>{ book.published_date }</td>
           </tr>
-          <tr>
+          <tr className="border">
             <th scope="row"></th>
-            <td>Description</td>
+            <td className="p-2">Text of News</td>
             <td>{ book.description }</td>
           </tr>
         </tbody>
@@ -93,16 +93,14 @@ class showBookDetails extends Component {
           <div className="row">
             <div className="col-md-10 m-auto">
               <br /> <br />
-              <Link to="/bk" className="btn btn-outline-warning float-left">
+              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
                   Show News List
               </Link>
             </div>
             <br />
             <div className="col-md-8 m-auto">
-              <h4 className="text-center">News Record</h4>
-              <p className="lead text-center">
-                  View News Info
-              </p>
+              <h4 className="text-center text-warning">News Record: View Info</h4>
+            
             </div>
           </div>
           <div>
@@ -111,12 +109,12 @@ class showBookDetails extends Component {
 
           <div className="row">
             <div className="col-md-6">
-              <button type="button" className="btn btn-outline-danger btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete Book</button><br />
+              <button type="button" className="btn btn-outline-danger purplle text-warning btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete News</button><br />
             </div>
 
             <div className="col-md-6">
-              <Link to={`/edit-book/${book._id}`} className="btn btn-outline-info btn-lg btn-block">
-                    Edit Book
+              <Link to={`/edit-book/${book._id}`} className="btn btn-outline-warning text-warning purplle btn-lg btn-block">
+                    Edit News
               </Link>
               <br />
             </div>

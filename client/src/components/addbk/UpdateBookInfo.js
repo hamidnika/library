@@ -70,15 +70,12 @@ class UpdateBookInfo extends Component {
           <div className="row">
             <div className="col-md-8 m-auto">
               <br />
-              <Link to="/bk" className="btn btn-outline-warning float-left">
+              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
                   Show News List
               </Link>
             </div>
             <div className="col-md-8 m-auto">
-              <h1 className="display-4 text-center">Edit News</h1>
-              <p className="lead text-center">
-                  Update News Info
-              </p>
+              <p className="display-6 text-center text-warning">Edit and Update News</p>
             </div>
           </div>
 
@@ -88,7 +85,7 @@ class UpdateBookInfo extends Component {
               <label htmlFor="title">Title</label>
               <input
                 type='text'
-                placeholder='Title of the Book'
+                placeholder='Title of News'
                 name='title'
                 className='form-control'
                 value={this.state.title}
@@ -98,10 +95,10 @@ class UpdateBookInfo extends Component {
             <br />
 
             <div className='form-group'>
-            <label htmlFor="isbn">ISBN</label>
+            <label htmlFor="isbn">Code of News</label>
               <input
                 type='text'
-                placeholder='ISBN'
+                placeholder='Code of News'
                 name='isbn'
                 className='form-control'
                 value={this.state.isbn}
@@ -122,10 +119,10 @@ class UpdateBookInfo extends Component {
             </div>
 
             <div className='form-group'>
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">Text of News</label>
               <input
                 type='text'
-                placeholder='Describe this book'
+                placeholder='Text of News'
                 name='description'
                 className='form-control'
                 value={this.state.description}
@@ -134,10 +131,10 @@ class UpdateBookInfo extends Component {
             </div>
 
             <div className='form-group'>
-            <label htmlFor="published_date">Published Date</label>
+            <label htmlFor="published_date">Date of News</label>
               <input
                 type='date'
-                placeholder='published_date'
+                placeholder='Date of News'
                 name='published_date'
                 className='form-control'
                 value={this.state.published_date}
@@ -148,7 +145,7 @@ class UpdateBookInfo extends Component {
             <label htmlFor="publisher">Publisher</label>
               <input
                 type='text'
-                placeholder='Publisher of this Book'
+                placeholder='Publisher of News'
                 name='publisher'
                 className='form-control'
                 value={this.state.publisher}
@@ -156,7 +153,7 @@ class UpdateBookInfo extends Component {
               />
             </div>
 
-            <button type="submit" className="btn btn-outline-info btn-lg btn-block">Update Book</button>
+            <button type="submit" className="btn btn-outline-warning btn-lg btn-block text-warning purplle">Update Book</button>
             </form>
           </div>
 
