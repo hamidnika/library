@@ -4,7 +4,8 @@ import { FaRegSave, FaSearch } from 'react-icons/fa';
 export default class Homepart extends Component {
     render() {
         return (
-            <div>
+            <div className="bg-secondary">
+              
                  <div className="row">
         <div className="col-md-3">
         <div className="card bg-secondary rounded">
@@ -59,7 +60,7 @@ export default class Homepart extends Component {
           </div>
         </div>
       </div>
-      
+
       <div className="row">
           <div className="col-md-4">
         <div className="card bg-secondary rounded mt-2">
