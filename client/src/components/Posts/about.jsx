@@ -7,7 +7,7 @@ export default class About extends Component {
     return (
       <div>
       {/*   <Image src="assets/dog-people.jpg" className="header-image" /> */}
-      <h3 className="text-white pl-2 purpllle">About Persian Associations in Germany</h3>
+      <h5 className="text-white pl-2 purpllle">About Persian Associations in Germany</h5>
         <div className="row">
           <div xs={12} sm={8} smOffset={2}>
             <p className="text-justify font-italic">
@@ -15,13 +15,13 @@ export default class About extends Component {
             </p>
           </div>
         </div>
-        <h3 className="text-white pl-2 purpllle">Managers of Persian Community</h3>
+        <h5 className="text-white pl-2 purpllle">Managers of Persian Community</h5>
         <div className="row"> 
         <div className="col-md-3 rounded co">
     <div className="card bg-sec">
     <img src={require('./Nikou.jpg')} className="img-fluid responsive" style={{height:170, width:200 }} alt="pic1"/>
       <div>
-        <h4 className="purpllle text-white pl-2">Hamid Nikou</h4>
+        <h5 className="purpllle text-white pl-2">Hamid Nikou</h5>
         <p className="title pl-2">CEO & Founder</p>
         <p className="pl-2">Some text that describes me lorem ipsum ipsum lorem.</p>
         <p className="pl-2">hamid.nikoo@gmail.com</p>
@@ -48,7 +48,7 @@ export default class About extends Component {
     <div className="card">
     <img src={require('./team2.jpg')} className="img-fluid responsive" style={{height:170, width:200 }} alt="asso"/>
       <div>
-        <h4 className="purpllle text-white pl-2">Majid Nikou</h4>
+        <h5 className="purpllle text-white pl-2">Majid Nikou</h5>
         <p className="title pl-2">CEO & Founder</p>
         <p className="pl-2">Some text that describes me lorem ipsum ipsum lorem.</p>
         <p className="pl-2">majid.nikoo@gmail.com</p>
@@ -75,7 +75,7 @@ export default class About extends Component {
     <div className="card">
     <img src={require('./team3.jpg')} className="img-fluid responsive" style={{height:170, width:200 }} alt="asso"/>
       <div>
-        <h4 className="purpllle text-white pl-2">Maziar Rezaie</h4>
+        <h5 className="purpllle text-white pl-2">Maziar Rezaie</h5>
         <p className="title pl-2">CEO & Founder</p>
         <p className="pl-2">Some text that describes me lorem ipsum ipsum lorem.</p>
         <p className="pl-2">maziar.rezaie@example.com</p>

@@ -15,7 +15,7 @@ export default class Homepart extends Component {
               <div> 
               <img src={require('./news.jpg')} className="img-fluid responsive rounded" alt="asso"/>
                 </div> 
-                <h6 className="card-title text-white p-2">Persian Associations in Germany. Here members to produce their own News to inform others.</h6>
+                <p className="card-title text-white p-2 h6">Persian Associations in Germany. Here members to produce their own News to inform others.</p>
               <Link to="/bk" className="btn bg-secondary text-white font-weight-bold">Read more ...</Link>
               
             </div>
