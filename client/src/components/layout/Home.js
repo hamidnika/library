@@ -11,7 +11,7 @@ export default class Home extends Component {
         <div className="row">
         <Homepart/>
           <div className="col-md-4">
-        <div className="card bg-secondary rounded">
+        <div className="card bg-secondary rounded mt-2">
           
             <div className="card-body">
              
@@ -24,7 +24,7 @@ export default class Home extends Component {
           </div>
         </div>
       <div className="col-md-4">
-<div className="card bg-secondary mt-2">
+<div className="card bg-secondary rounded mt-2">
   <div className="card-body">
   <h6 className="bg-secondary p-2 text-white font-weight-bold text-center">We Will have Live Streaming <i class="fas fa-tv"></i></h6>
     <iframe title="my video" className="img-fluid" width="280" height="auto" src="https://www.youtube.com/embed/s1-foVKep2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
