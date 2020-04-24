@@ -32,7 +32,7 @@ const AddEducation = ({ addEducation, history }) => {
 
   return (
     <Fragment>
-      <div className="purpllle rounded">
+      <div className="purpllle rounded p-2">
       <h5 className='pl-2 pt-2 purpllle text-white'>Add Your Education</h5>
       <small className="pl-2 purplle text-white">* = required field</small>
       <form

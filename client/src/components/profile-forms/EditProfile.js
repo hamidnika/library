@@ -74,7 +74,7 @@ const EditProfile = ({
 
     return (
         <Fragment>
-  <div className="purpllle rounded">
+  <div className="purpllle rounded p-2">
           <h5 className="text-white pl-2 pt-2 purpllle">
         Edit your Profile
       </h5>

@@ -25,13 +25,13 @@ if(isAuthenticated) {
     return (
     <Fragment>
       <div className="purpllle dashboard">
-      <h4 className="text-white">Login</h4>
-      <p className="text-white">
+      <h5 className="text-white pl-2">Login</h5>
+      <p className="text-white pl-2">
         <i className="fas fa-user" /> Login Into Your Account
       </p>
       <form className="form" onSubmit={e => onSubmit(e)}>
-        <div className="form-group">
-          <input 
+        <div className="form-group p-2">
+          <input
           type="email" 
           placeholder="Email Address" 
           name="email"
@@ -40,7 +40,7 @@ if(isAuthenticated) {
           required
           />
         </div>
-        <div className="form-group">
+        <div className="form-group p-2">
           <input
             type="password"
             placeholder="Password"
@@ -52,8 +52,8 @@ if(isAuthenticated) {
         </div>
         <input type="submit" className="btn text-white purplle" value="Login" />
       </form>
-      <p className="my-1 text-white">
-        Don't have an account? <Link className="text-white purplle" to="/register">Register</Link>
+      <p className="my-1 text-white pl-2">
+        Don't have an account? <Link className="text-white purplle pl-2" to="/register">Register</Link>
       </p> 
       </div>
     </Fragment>

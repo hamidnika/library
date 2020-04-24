@@ -22,7 +22,7 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <div className="purpllle rounded dashboard">
+      <div className="purpllle rounded dashboard p-2">
       <h5 className='text-white pl-2'>Information about Members</h5>
       <h5 className='text-white pl-2'>
        Welcome {user && user.name}
@@ -42,7 +42,7 @@ const Dashboard = ({
       ) : (
         <Fragment>
           <p className="text-warning bg-dark">Make your profile and add some information</p>
-          <Link to='/create-profile' className='btn btn-dark text-white my-1'>
+          <Link to='/create-profile' className='btn btn-dark text-white pl-2'>
             Create Profile
           </Link>
         </Fragment>

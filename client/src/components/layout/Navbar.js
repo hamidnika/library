@@ -9,7 +9,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <ul className="nav navbar-collapse hii">
         
 {/*         <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/> */}
-        <h3 className="handwrite text-warning p-3 m-0">BookLook</h3>
+        <p className="handwrite text-warning p-2 pl-4 m-0" style={{height:'auto', width:300 }}>BookLook</p>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>
@@ -54,7 +54,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
       <ul className="nav navbar-collapse hii">
 {/* <img src={require('./persian.jpg')} className="n" style={{height:60, width:350 }} alt="pic1"/> */}
-<h3 className="handwrite text-warning p-3 m-0">BookLook</h3>
+<p className="handwrite text-warning pl-4 p-2 m-0" style={{height:'auto', width:300 }}>BookLook</p>
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>

@@ -8,9 +8,9 @@ import { deleteEducation } from '../../actions/profile';
 const Education = ({ education, deleteEducation }) => {
   const educations = education.map(edu => (
     <tr className="bg-secondary text-white" key={edu._id}>
-      <td className="col">{edu.school}</td>
-      <td className="col">{edu.degree}</td>
-      <td className="col">
+      <td className="col-md-3">{edu.school}</td>
+      <td className="col-md-3">{edu.degree}</td>
+      <td className="col-md-3">
         <Moment format="YYYY/MM/DD">{moment.utc(edu.from)}</Moment> -{' '}
         {edu.to === null ? (
           ' Now'
@@ -18,10 +18,10 @@ const Education = ({ education, deleteEducation }) => {
           <Moment format="YYYY/MM/DD">{moment.utc(edu.to)}</Moment>
         )}
       </td>
-      <td>
-        <button
+      <td scope="col">
+        <button 
           onClick={() => deleteEducation(edu._id)}
-          className="btn bg-warning text-danger"
+          className="btn bg-dark text-warning p-0 m-0"
         >
           Delete
         </button>
@@ -31,13 +31,14 @@ const Education = ({ education, deleteEducation }) => {
 
   return (
     <Fragment>
-      <h6 className="my-2 text-white pl-2">Education Background</h6>
+      <h6 className="text-white pl-2">Education Background</h6>
       <table className="table-responsive">
-        <thead >
-          <tr >
-            <th className="bg-white col">School/University</th>
-            <th className="bg-white text-dark col">Degree</th>
-            <th className="bg-white text-dark col">Years</th>
+        <thead>
+          <tr>
+            <th scope="row" className="bg-white">University</th>
+            <th scope="row" className="bg-white text-dark">Degree</th>
+            <th scope="row" className="bg-white text-dark">Years</th>
+            <th scope="row" className="bg-white text-dark"></th>
           </tr>
         </thead>
         <tbody>{educations}</tbody>

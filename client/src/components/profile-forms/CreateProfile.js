@@ -48,10 +48,11 @@ const CreateProfile = ({ createProfile, history }) => {
 
     return (
         <Fragment>
-          <h3 className="text-warning bg-dark">
+          <div className="purpllle p-2">
+          <h4 className="text-white pl-2">
         Create Your Profile
-      </h3>
-      <p className="lead text-warning bg-dark">
+      </h4>
+      <p className="text-white pl-2">
         <i className="fas fa-user"></i> some information for your
         profile
       </p>
@@ -152,7 +153,8 @@ const CreateProfile = ({ createProfile, history }) => {
         <Link className="btn text-warning purplle my-1" to="/dashboard">
         Go Back
         </Link>
-      </form>  
+      </form> 
+      </div>
         </Fragment>
     )
 }
