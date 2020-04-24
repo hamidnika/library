@@ -821,6 +821,10 @@ button {
   width: 105%;
 }
 
+.resp {
+  width: 270px;
+  height: "auto";
+}
 .footer-h {
   height: 40px;
 }
