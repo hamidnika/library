@@ -50,7 +50,7 @@ const CreateProfile = ({ createProfile, history }) => {
         <Fragment>
           <div className="purpllle p-2">
           <h4 className="text-white pl-2">
-        Create Your Profile
+        Create Profile
       </h4>
       <p className="text-white pl-2">
         <i className="fas fa-user"></i> some information for your

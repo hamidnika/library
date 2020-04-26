@@ -22,34 +22,38 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <div className="purpllle rounded dashboard p-2">
+      <div className="purpllle rounded p-2">
+        <div className="pb-5">
       <h5 className='text-white pl-2'>Information about Members</h5>
       <h5 className='text-white pl-2'>
-       Welcome {user && user.name}
+       Welcome <span className="text-success h3">{user && user.name}</span> to <span className="text-warning handwrit">BookLook</span>
       </h5>
+      </div>
       {profile !== null ? (
         <Fragment>
           <DashboardActions />
-          <Experience experience={profile.experience} />
-          <Education education={profile.education} />
+         <div className="p-2"><Experience experience={profile.experience}/></div>
+         <div className="p-2"><Education education={profile.education} /></div>
 
-          <div className='my-1'>
-            <button className='btn purplle text-warning pl-2' onClick={() => deleteAccount()}>
+          <div className='my-3 p-2'>
+            <button className='btn purplle text-warning p-2' onClick={() => deleteAccount()}>
               <i/> Delete My Account
             </button>
           </div>
         </Fragment>
       ) : (
         <Fragment>
-          <p className="text-warning ml-2">Make your profile and add some information</p>
+          <p className="text-warning ml-2">Create Profile and Add Personal Information</p>
           <Link to='/create-profile' className='btn btn-dark text-white pl-2'>
             Create Profile
           </Link>
         </Fragment>
       )}
+      <div className="dashboar"></div>
       </div>
+      
     </Fragment>
-
+     
   );
 };
 

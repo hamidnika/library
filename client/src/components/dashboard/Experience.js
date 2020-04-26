@@ -30,7 +30,7 @@ const Experience = ({ experience, deleteExperience }) => {
 
   return (
     <Fragment>
-      <h6 className="text-white pl-2">Experience Background</h6>
+      <h6 className="text-white">Experience Background</h6>
       <table className="table-responsive">
         <thead >
           <tr>

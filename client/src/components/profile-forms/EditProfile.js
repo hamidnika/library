@@ -76,7 +76,7 @@ const EditProfile = ({
         <Fragment>
   <div className="purpllle rounded p-2">
           <h5 className="text-white pl-2 pt-2 purpllle">
-        Edit your Profile
+        Update Profile
       </h5>
 
       <small className="purplle pl-2 text-white">* = required field</small>

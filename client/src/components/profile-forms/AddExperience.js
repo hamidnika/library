@@ -25,7 +25,7 @@ const AddExperience = ({ addExperience, history }) => {
   return (
     <Fragment>
       <div className="purpllle rounded p-2">
-      <h5 className='purpllle pl-2 pt-2 text-white'>Add your Experiences</h5>
+      <h5 className='purpllle pl-2 pt-2 text-white'>Add Experiences</h5>
       <small className="purplle pl-2 text-white">* = required field</small>
       <form
         className='form'
