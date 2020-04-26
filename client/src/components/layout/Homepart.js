@@ -15,7 +15,7 @@ export default class Homepart extends Component {
               <div> 
               <img src={require('./news.jpg')} className="img-fluid responsive rounded" alt="asso"/>
                 </div> 
-                <p className="card-text text-white">Persian Associations in Germany. Here members to produce their own News to inform others.</p>
+                <p className="card-text text-white pt-1">Persian Associations in Germany. Here members produce their own News to inform others.</p>
               <Link to="/bk" className="btn bg-secondary text-white">Read more...</Link>
               
             </div>
@@ -39,9 +39,9 @@ export default class Homepart extends Component {
         	<div className="card bg-secondary rounded p-0 m-0">
           <div className="card-body pt-1 mt-1">
   
-					<h1 className="card-title text-center font-weight-bold text-warning m-0 pt-0">Chat<a href="https://rocky-shelf-85720.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a></h1>
+					<h1 className="card-title text-center font-weight-bold text-warning m-0 pt-0">Chat<a href="https://chattroooms.herokuapp.com/" className="btn btn-dark text-warning elem">Click and Enjoy</a></h1>
           <p className="text-center display-5"><span>&#128525;&#128512;&#128523;</span></p>
-				  <p className="card-text text-white m-0 p-0">Chat with others to make connection and naturally ask about your needs in Germany and share your experiences with others.</p>
+				  <p className="card-text text-white m-0 p-0 text-justify">Chat with others to make connection and naturally ask about your needs in Germany and share your experiences with others.</p>
           </div>
 				</div>
         </div>
@@ -52,9 +52,12 @@ export default class Homepart extends Component {
               <div> 
               <img src={require('./newss.jpg')} class="img-fluid responsive rounded" alt="asso"/>
                 </div>
-                <p className="card-text text-white">Access to News and latest developments of countries.</p>
-                <a href="https://hamidnika.github.io/newsdaily/" className="btn bg-secondary text-white font-weight-bold">Read more ...</a>
-              <a href="https://hamidnika.github.io/coronaintera/" className="btn bg-secondary text-warning font-weight-bold rounded">Latest News of Corona in the world</a>
+                <div>
+                <p className="card-text text-white pt-1 pb-0">Access to News and latest developments of countries.</p>
+                <a href="https://hamidnika.github.io/newsdaily/" className="btn bg-secondary text-white pt-0 mt-0">Read more...</a>
+                </div>
+
+              <a href="https://hamidnika.github.io/coronaintera/" className="btn bg-secondary text-warning rounded">Latest News of Corona in the world</a>
               
             </div>
           </div>
@@ -63,14 +66,13 @@ export default class Homepart extends Component {
 
       <div className="row">
           <div className="col-md-4">
-        <div className="card bg-secondary rounded mt-2">
+        <div className="card bg-secondary rounded mt-2 container">
           
             <div className="card-body">
-             
-              <div> 
-              <img src={require('../../img/gallery.jpg')} className="img-fluid resp rounded" alt="pic"/>
-                </div> 
-                <Link to="./gallery"><h6 className="btn bg-secondary text-white font-weight-bold text-center m-0">Gallery of Persian Events</h6></Link>
+          
+            <Link to="./gallery"><img src={require('../../img/gallery.jpg')} className="img-fluid resp rounded p-0" alt="pic"/>
+              <p className="btn bg-secondary text-white font-weight-bold p-0">Gallery of Persian Events</p></Link>
+            
               
             </div>
           </div>
@@ -88,8 +90,8 @@ export default class Homepart extends Component {
         <div className="col-md-4">
         	<div className="card bg-secondary text-white mt-2">
           <div className="card-body">
-          <h6 className="p-2"><Link to="/search" className="btn bg-dark text-white">Search and save Books from GoogleBooks API <h3><FaSearch /></h3></Link></h6>
-          <h6 className="p-2"><Link to="/saved" className="btn bg-dark text-white">See SavedBooks by Users from GoogleBooks API <h3><FaRegSave /></h3></Link></h6>
+          <h8 className="p-1"><Link to="/search" className="btn bg-dark text-white">Search and save Books from GoogleBooks<h4><FaSearch /></h4></Link></h8>
+          <h8 className="p-1"><Link to="/saved" className="btn bg-dark text-white">See SavedBooks by Users from GoogleBooks<h4><FaRegSave /></h4></Link></h8>
                   
           </div>
 				</div>

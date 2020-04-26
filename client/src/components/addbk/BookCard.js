@@ -7,7 +7,7 @@ const BookCard = (props) => {
     const  book  = props.book;
 
     return(
-        <div className="purplle rounded m-2">
+        <div className="bg-secondary rounded m-2">
           
             
             <div className="row pt-2">
@@ -17,7 +17,7 @@ const BookCard = (props) => {
                     </Link>
                 </div>
                 <p className="text-white m-2">Writer: {book.authors}</p>
-             <p className="text-white justified text-left m-2">{book.description}</p>
+             <p className="text-white text-justify m-2">{book.description}</p>
              <p className="text-white m-2">Source: {book.publisher}</p>
              <p className="text-white m-2">Date: {book.published_date}</p>
         </div>

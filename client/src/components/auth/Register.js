@@ -33,12 +33,9 @@ if(isAuthenticated) {
     return (
     <Fragment>
       <div className="purpllle dashboard">
-      <h5 className="text-white pl-2">Register</h5>
-      <p className="text-white pl-2">
-        <i className="fas fa-user" /> Create Your Account
-      </p>
+      <h5 className="text-white p-4">Register</h5>
       <form className="form p-2" onSubmit={e => onSubmit(e)}>
-        <div className="form-group">
+        <div className="form-group p-3">
           <input 
           type="text" 
           placeholder="Name" 
@@ -47,7 +44,7 @@ if(isAuthenticated) {
           onChange={e => onChange(e)}
             />
         </div>
-        <div className="form-group">
+        <div className="form-group p-3">
           <input 
           type="email" 
           placeholder="Email Address" 
@@ -56,7 +53,7 @@ if(isAuthenticated) {
           onChange={e => onChange(e)}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group p-3">
           <input
             type="password"
             placeholder="Password"
@@ -65,7 +62,7 @@ if(isAuthenticated) {
             onChange={e => onChange(e)}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group p-3">
           <input
             type="password"
             placeholder="Confirm Password"
@@ -74,9 +71,9 @@ if(isAuthenticated) {
             onChange={e => onChange(e)}
           />
         </div>
-        <input type="submit" className="btn text-white purplle" value="Register" />
+        <div className="pl-3"><input type="submit" className="btn text-white purplle" value="Register" /></div>
       </form>
-      <p className="text-white mt-1 pl-2">
+      <p className="text-white mt-1 pl-3">
         Already have an account? <Link className="text-white purplle pl-2" to="/login">Login</Link>
       </p> 
       </div>

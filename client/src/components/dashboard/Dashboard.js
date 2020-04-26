@@ -22,12 +22,12 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <div className="purpllle rounded p-2">
+      <div className="purpllle rounded p-3">
         <div className="pb-5">
-      <h5 className='text-white pl-2'>Information about Members</h5>
-      <h5 className='text-white pl-2'>
+      <h5 className='text-white pl-2 pt-3'>Information about Members</h5>
+      <h6 className='text-white pl-2'>
        Welcome <span className="text-success h3">{user && user.name}</span> to <span className="text-warning handwrit">BookLook</span>
-      </h5>
+      </h6>
       </div>
       {profile !== null ? (
         <Fragment>
@@ -43,7 +43,7 @@ const Dashboard = ({
         </Fragment>
       ) : (
         <Fragment>
-          <p className="text-warning ml-2">Create Profile and Add Personal Information</p>
+          <p className="text-warning m-2">Create Profile and Add Personal Information</p>
           <Link to='/create-profile' className='btn btn-dark text-white pl-2'>
             Create Profile
           </Link>

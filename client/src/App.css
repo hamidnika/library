@@ -15,8 +15,8 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
   background-color: rgb(241, 231, 231);
   color: #333;
 }
@@ -822,7 +822,7 @@ button {
 }
 
 .resp {
-  width: 270px;
+  width: 200px;
   height: "auto";
 }
 .footer-h {
@@ -1102,6 +1102,11 @@ button {
   position: relative;
   height: 600px;
 }
+
+.container {
+  flex-direction: column;
+}
+
 /* .dashboar {
   position: relative;
   height: 375px;
