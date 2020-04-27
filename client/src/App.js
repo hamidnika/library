@@ -34,7 +34,7 @@ import ShowBookList from './components/addbk/ShowBookList';
 import Archive from './components/addbk/archive';
 import ShowBookDetails from './components/addbk/ShowBookDetails';
 import UpdateBookInfo from './components/addbk/UpdateBookInfo';
-
+import ScrollToTop from './ScrollToTop'
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -49,6 +49,7 @@ const App = () => {
   return ( 
 <Provider store={store}>  
 <Router >
+<ScrollToTop>
 <Fragment>
      <Navbar className="navbar"/>
 
@@ -82,6 +83,7 @@ const App = () => {
   <Nav/>
   </div> 
  </Fragment>
+ </ScrollToTop>
  </Router>
  </Provider>
 )};
