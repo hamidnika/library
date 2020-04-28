@@ -47,7 +47,7 @@ class ShowBookList extends Component {
        {/*   <FileUpload /> */}
           <div className="row">
             <div className="col-md-1 col-sm-1">
-            <Link to="/archive" className="btn text-white purpllle p-0">Archive of News</Link>
+            <Link to="/archive" className="btn text-white purpllle p-1">Archive of News</Link>
             </div>
             <div className="col-md-9 col-sm-9">
               <p className="text-center mt-2 pt-2 font-weight-bold">News of Persian Communities in Germany</p>

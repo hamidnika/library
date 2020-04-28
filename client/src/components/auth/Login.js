@@ -24,7 +24,7 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <div className="purpllle dashboard">
+      <div className="purpllle dashboard rounded">
       <h5 className="text-white p-4">Login</h5>
       <form className="form" onSubmit={e => onSubmit(e)}>
         <div className="form-group p-3">

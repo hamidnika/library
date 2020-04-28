@@ -7,7 +7,7 @@ export default class About extends Component {
     return (
       <div>
       {/*   <Image src="assets/dog-people.jpg" className="header-image" /> */}
-      <p className="text-white pl-2 purpllle center">About Persian Associations in Germany</p>
+      <p className="text-white pl-2 purpllle center rounded">About Persian Associations in Germany</p>
         <div className="row">
           <div xs={12} sm={8} smOffset={2}>
             <p className="text-justify font-italic">
@@ -15,7 +15,7 @@ export default class About extends Component {
             </p>
           </div>
         </div>
-        <p className="text-white pl-2 purpllle center">Managers of Persian Community</p>
+        <p className="text-white pl-2 purpllle center rounded">Managers of Persian Community</p>
         <div className="row"> 
         <div className="col-md-3 rounded co">
     <div className="card bg-sec">

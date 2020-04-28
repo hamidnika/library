@@ -8,7 +8,7 @@ const Landing = ({ isAuthenticated }) => {
   } 
 
     return (
-        <section className="landing">
+        <section className="landing rounded">
       <div className="dark-overlay mb-0">
         <div className="landing-inner">
         <h6 className="text-warning font-weight-bold handwrite">

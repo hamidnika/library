@@ -32,7 +32,7 @@ if(isAuthenticated) {
 }
     return (
     <Fragment>
-      <div className="purpllle dashboard">
+      <div className="purpllle dashboard rounded">
       <h5 className="text-white p-4">Register</h5>
       <form className="form p-2" onSubmit={e => onSubmit(e)}>
         <div className="form-group p-3">
