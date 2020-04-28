@@ -58,15 +58,13 @@ class ShowBookList extends Component {
             <Link to="/create-book" className="btn text-white purpllle p-0"><p className="purpllle rounded m-0 p-1">Just members can upload News
               + Add News
             </p></Link>
-              
-             
             </div>
 
           </div>
 
           <div className="row">
           <div className="list">
-                {bookList}
+                {bookList.reverse()}
           </div>
           </div>    
       </div>

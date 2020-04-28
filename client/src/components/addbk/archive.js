@@ -55,7 +55,7 @@ class Archive extends Component {
 
           <div className="row">
           <div className="list">
-                {bookList}
+                {bookList.reverse()}
           </div>
           </div>    
       </div>
