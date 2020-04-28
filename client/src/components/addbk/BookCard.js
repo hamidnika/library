@@ -13,7 +13,7 @@ const BookCard = (props) => {
             <div className="row pt-2">
                     <h5 className="ml-4">{book.title}</h5>
                     <Link className="text-warning" to={`/show-book/${book._id}`}>
-                    <p className="font-small ml-3">click to Delete or Update </p>
+                    <p className="font-small ml-3">Click to Delete or Update </p>
                     </Link>
                 </div>
                 <p className="text-white m-2">Writer: {book.authors}</p>
