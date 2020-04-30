@@ -48,7 +48,7 @@ class ShowBookList extends Component {
           <div className="row">
             <div className="col-md-2 col-sm-2">
             <div className="p-1"><Link to="/archive" className="btn btn-success font-weight-bold font-small font-weight-bold p-1">Go to Archive of News</Link></div>
-            <div className="p-1"><a href="https://hamidnika.github.io/coronaintera/" className="btn font-small font-weight-bold text-warning purpllle p-1">Latest News of Corona</a></div>
+            <div className="p-1"><a href="https://hamidnika.github.io/coronaintera/" className="btn font-small font-weight-bold text-white purpllle p-1">Latest News of Corona</a></div>
             </div>
             <div className="col-md-8 col-sm-8 mt-2 pt-2">
               <h6 className="text-center font-weight-bold">News of Persian Communities in Germany</h6>
@@ -56,8 +56,8 @@ class ShowBookList extends Component {
 
             <div className="col-md-2 col-sm-2">
            
-            <Link to="/create-book" className="btn text-white purpllle p-0"><p className="purpllle rounded font-small m-0 p-1 ont-weight-bold">Just members can upload News
-              + Add News
+            <Link to="/create-book" className="btn text-white purpllle p-0"><p className="purpllle rounded font-small m-0 p-1 font-weight-bold">Just Members can Add 
+<i class="fas fa-plus pl-1"> News </i>
             </p></Link>
             </div>
 

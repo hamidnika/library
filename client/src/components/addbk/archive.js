@@ -49,7 +49,7 @@ class Archive extends Component {
               <h7>Back to Current News</h7>
               </Link>
           <div className="row">
-              <h5 className="m-2 rounded text-white font-weight-bold">ARCHIVE of News-Persian Communities in Germany</h5>
+              <h6 className="m-2 rounded text-white font-weight-bold">ARCHIVE of News-Persian Communities in Germany</h6>
              
           </div>
 

@@ -8,8 +8,7 @@ const BookCard = (props) => {
 
     return(
         <div className="bg-white text-dark rounded m-2">
-          
-            
+     
             <div className="row pt-2">
                     <h5 className="ml-4 font-weight-bold">{book.title}</h5>
                     <Link className="text-success rounded" to={`/show-book/${book._id}`}>

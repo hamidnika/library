@@ -14,7 +14,7 @@ const Landing = ({ isAuthenticated }) => {
         <h6 className="text-warning font-weight-bold handwrite">
             Welcome to BookLook
           </h6>
-          <h5 className="text-white font-weight-bold">Become Member of Persian Associations</h5>
+          <h6 className="text-white font-weight-bold">Become Member of Persian Associations</h6>
           <div>
             <Link to="/register" className="btn bg-dark text-white">
               Register
