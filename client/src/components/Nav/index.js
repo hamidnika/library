@@ -38,7 +38,7 @@ export default class Nav extends Component {
             <i className="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
           </a>
  
-          <a className="git-ic text-white" href="https://github.com/hamidnik">
+          <a className="git-ic text-white" href="https://github.com/hamidnika">
           <i className="fab fa-lg fa-github mr-md-5 mr-3 fa-2x"></i>
           </a>
          
@@ -52,7 +52,7 @@ export default class Nav extends Component {
   </div>
 
   <div className="text-center py-2 text-white">© 2020 Copyright:
-    <a className="text-warning middle" href="www.booklook.com"> booklook.com</a>
+    <a className="text-warning middle" href="www.booklook.com">https://mernudem.herokuapp.com/</a>
   </div>
  
 
