@@ -46,16 +46,17 @@ class ShowBookList extends Component {
       <div className="ShowBookList contain rounded">
        {/*   <FileUpload /> */}
           <div className="row">
-            <div className="col-md-1 col-sm-1">
-            <Link to="/archive" className="btn text-white purpllle p-1">Archive of News</Link>
+            <div className="col-md-2 col-sm-2">
+            <div className="p-1"><Link to="/archive" className="btn btn-success font-weight-bold font-small font-weight-bold p-1">Go to Archive of News</Link></div>
+            <div className="p-1"><a href="https://hamidnika.github.io/coronaintera/" className="btn font-small font-weight-bold text-warning purpllle p-1">Latest News of Corona</a></div>
             </div>
-            <div className="col-md-9 col-sm-9">
-              <p className="text-center mt-2 pt-2 font-weight-bold">News of Persian Communities in Germany</p>
+            <div className="col-md-8 col-sm-8 mt-2 pt-2">
+              <h6 className="text-center font-weight-bold">News of Persian Communities in Germany</h6>
             </div>
 
             <div className="col-md-2 col-sm-2">
-            <div className="p-1"><a href="https://hamidnika.github.io/coronaintera/" className="btn text-warning purpllle p-1">Latest News of Corona</a></div>
-            <Link to="/create-book" className="btn text-white purpllle p-0"><p className="purpllle rounded m-0 p-1">Just members can upload News
+           
+            <Link to="/create-book" className="btn text-white purpllle p-0"><p className="purpllle rounded font-small m-0 p-1 ont-weight-bold">Just members can upload News
               + Add News
             </p></Link>
             </div>

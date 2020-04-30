@@ -45,11 +45,11 @@ class Archive extends Component {
       
       <div className="ShowBookList contain rounded">
        {/*   <FileUpload /> */}
-       <Link to="/bk" className="font-weight-bold text-warning">
-              <h7>&#8656; Back to Current News</h7>
+       <Link to="/bk" className="btn btn-success text-white font-small font-weight-bold p-1">
+              <h7>Back to Current News</h7>
               </Link>
           <div className="row">
-              <h5 className="m-2 rounded text-warning font-weight-bold">ARCHIVE of News-Persian Communities in Germany</h5>
+              <h5 className="m-2 rounded text-white font-weight-bold">ARCHIVE of News-Persian Communities in Germany</h5>
              
           </div>
 
