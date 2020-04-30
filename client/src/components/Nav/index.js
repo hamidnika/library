@@ -52,7 +52,7 @@ export default class Nav extends Component {
   </div>
 
   <div className="text-center py-2 text-white">© 2020 Copyright:
-    <a className="text-warning middle" href="www.booklook.com">https://mernudem.herokuapp.com/</a>
+    <a className="text-white" href="https://mernudem.herokuapp.com"> BookLook</a>
   </div>
  
 
