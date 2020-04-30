@@ -65,21 +65,19 @@ class UpdateBookInfo extends Component {
 
   render() {
     return (
-      <div className="UpdateBookInfo">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8 m-auto">
-              <br />
-              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
+      <div className="UpdateBookInfo rounded p-2">
+          <div className="row p-4">
+            <div className="col-md-8 m-auto pl-2">
+              <Link to="/bk" className="btn btn-outline-warning text-white purplle font-small">
                   Show News List
               </Link>
             </div>
-            <div className="col-md-8 m-auto">
+            <div className="col-md-4 m-auto p-1">
               <p className="display-6 text-center text-warning">Edit and Update News</p>
             </div>
           </div>
-
-          <div className="col-md-8 m-auto">
+<div className="row p-4">
+          <div className="col-md-12 m-auto p-2">
           <form noValidate onSubmit={this.onSubmit}>
             <div className='form-group'>
               <label htmlFor="title">Title</label>
@@ -153,11 +151,10 @@ class UpdateBookInfo extends Component {
               />
             </div>
 
-            <button type="submit" className="btn btn-outline-warning btn-lg btn-block text-warning purplle">Update Book</button>
+            <button type="submit" className="btn btn-outline-warning btn-block text-warning purplle">Update News</button>
             </form>
           </div>
-
-        </div>
+          </div>
       </div>
     );
   }

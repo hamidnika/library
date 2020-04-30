@@ -87,44 +87,35 @@ class showBookDetails extends Component {
     </div>
 
     return (
-      <div className="ShowBookDetails">
-      
-        <div className="container">
-          <div className="row">
-            <div className="col-md-10 m-auto">
-              <br /> <br />
-              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
+      <div className="ShowBookDetails rounded p-4">
+          <div className="row p-4">
+            <div className="col-md-8 m-auto p-2">
+              <Link to="/bk" className="btn btn-outline-warning font-small text-white purplle">
                   Show News List
               </Link>
             </div>
             <br />
-            <div className="col-md-8 m-auto">
-              <h4 className="text-center text-warning">News Record: View Info</h4>
+            <div className="col-md-4 m-auto p-1">
+              <p className="text-center text-warning">Record of News Information</p>
             
             </div>
           </div>
-          <div>
+          <div className="p-0">
             { BookItem }
           </div>
 
-          <div className="row">
+          <div className="row p-4">
             <div className="col-md-6">
               <button type="button" className="btn btn-outline-danger purplle text-warning btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete News</button><br />
             </div>
 
             <div className="col-md-6">
               <Link to={`/edit-book/${book._id}`} className="btn btn-outline-warning text-warning purplle btn-lg btn-block">
-                    Edit News
+                    Update News
               </Link>
-              <br />
             </div>
 
           </div>
-            {/* <br />
-            <button type="button" class="btn btn-outline-info btn-lg btn-block">Edit Book</button>
-            <button type="button" class="btn btn-outline-danger btn-lg btn-block">Delete Book</button> */}
-
-        </div>
       </div>
     );
   }
