@@ -83,7 +83,7 @@ class Search extends Component {
       <div>
         <Row>
           <div className="col-md-3 rounded bg-dark pt-4">
-            <h5>Search and save books from google!</h5>
+            <h6>Search and Save books from google</h6>
             <form>
               <div className="form-group">
                 <input
@@ -98,7 +98,7 @@ class Search extends Component {
               <img src={im} alt="logo" style={{height: this.state.books.length*5}} onChange={this.handleInputChange} />
             </form>
           </div>
-          <div className="col-md-9 border rounded purplle pt-4 ">
+          <div className="col-md-9 rounded purplle pt-4 ">
             {this.state.searched === "" ? (
             <h5  className="text-white">Results</h5>
             
