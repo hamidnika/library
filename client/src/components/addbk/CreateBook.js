@@ -53,17 +53,20 @@ class CreateBook extends Component {
 
   render() {
     return (
-      <div className="CreateBook">
-        <div className="container">
+      <div className="CreateBook rounded p-2">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <br />
-              <Link to="/bk" className="btn btn-outline-warning text-warning purplle float-left">
+            <div className="col-md-2 m-auto">
+              <Link to="/bk" className="btn btn-outline-warning font-small text-white purplle">
                   Show News List
               </Link>
             </div>
-            <div className="col-md-8 m-auto">
-              <h5 className="text-center">Add your Own News</h5>
+            <div className="col-md-10 m-auto">
+              <p className="text-center text-warning">Add your Own News</p>
+              </div>
+              </div>
+
+              <div className="row p-4">
+              <div className="col-md-12 m-auto">
               <form noValidate onSubmit={this.onSubmit}>
               
                 <div className='form-group'>
@@ -141,7 +144,6 @@ class CreateBook extends Component {
           </div>
           </div>
         </div>
-      </div>
     );
   }
 }

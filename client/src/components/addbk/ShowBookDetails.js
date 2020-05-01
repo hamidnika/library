@@ -42,7 +42,7 @@ class showBookDetails extends Component {
 
     const book = this.state.book;
     let BookItem = <div>
-      <table className="">
+      <table>
         {/* <thead>
           <tr>
             <th scope="col">#</th>
@@ -51,7 +51,7 @@ class showBookDetails extends Component {
             <th scope="col">Handle</th>
           </tr>
         </thead> */}
-        <tbody >
+        <tbody>
           <tr className="border">
             <th scope="row"></th>
             <td className="p-2">Title</td>
@@ -87,26 +87,24 @@ class showBookDetails extends Component {
     </div>
 
     return (
-      <div className="ShowBookDetails rounded p-4">
-          <div className="row p-4">
-            <div className="col-md-8 m-auto p-2">
+      <div className="ShowBookDetails rounded p-2">
+          <div className="row p-2">
+            <div className="col-md-2 m-auto p-2">
               <Link to="/bk" className="btn btn-outline-warning font-small text-white purplle">
                   Show News List
               </Link>
             </div>
-            <br />
-            <div className="col-md-4 m-auto p-1">
+            <div className="col-md-8 m-auto p-1">
               <p className="text-center text-warning">Record of News Information</p>
-            
             </div>
           </div>
-          <div className="p-0">
+          <div className="p-0 m-0">
             { BookItem }
           </div>
 
           <div className="row p-4">
             <div className="col-md-6">
-              <button type="button" className="btn btn-outline-danger purplle text-warning btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete News</button><br />
+              <button type="button" className="btn btn-outline-danger purplle text-warning btn-lg btn-block" onClick={this.onDeleteClick.bind(this,book._id)}>Delete News</button>
             </div>
 
             <div className="col-md-6">

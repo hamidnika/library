@@ -66,18 +66,18 @@ class UpdateBookInfo extends Component {
   render() {
     return (
       <div className="UpdateBookInfo rounded p-2">
-          <div className="row p-4">
-            <div className="col-md-8 m-auto pl-2">
+          <div className="row p-2">
+            <div className="col-md-2 m-auto">
               <Link to="/bk" className="btn btn-outline-warning text-white purplle font-small">
                   Show News List
               </Link>
             </div>
-            <div className="col-md-4 m-auto p-1">
+            <div className="col-md-10 m-auto p-1">
               <p className="display-6 text-center text-warning">Edit and Update News</p>
             </div>
           </div>
-<div className="row p-4">
-          <div className="col-md-12 m-auto p-2">
+<div className="row p-2">
+          <div className="col-md-12 m-auto">
           <form noValidate onSubmit={this.onSubmit}>
             <div className='form-group'>
               <label htmlFor="title">Title</label>

@@ -11,9 +11,9 @@ const Landing = ({ isAuthenticated }) => {
         <section className="landing rounded">
       <div className="dark-overlay mb-0">
         <div className="landing-inner">
-        <h6 className="text-warning font-weight-bold handwrite">
+        <p className="text-warning font-weight-bold handwrite">
             Welcome to BookLook
-          </h6>
+          </p>
           <h6 className="text-white font-weight-bold">Become Member of Persian Associations</h6>
           <div>
             <Link to="/register" className="btn bg-dark text-white">
