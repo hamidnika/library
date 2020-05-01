@@ -9,7 +9,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       <ul className="nav navbar-collapse hii">
         
      <img src={require('./logoo.jpg')} className="n" style={{height:'auto', width:245 }} alt="pic1"/> 
-        {/* <p className="handwrite text-warning p-2 pl-4 m-0" style={{height:'auto', width:300 }}>BookLook</p> */}
          <li className="btn-outline-warning">
       <Link to="/home">Home</Link>
       </li>

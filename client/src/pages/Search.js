@@ -3,7 +3,6 @@ import { Row, /* Container */ } from "../components/Grid";
 import Button from "../components/Button";
 import { BookList, BookListItem } from "../components/BookList";
 import API from "../utils/API";
-import im from "../img/persians.jpg"
 import { FaSearch } from 'react-icons/fa';
 
 class Search extends Component {
@@ -82,8 +81,8 @@ class Search extends Component {
     return (
       <div>
         <Row>
-          <div className="col-md-3 rounded bg-dark pt-4">
-            <h6>Search and Save books from google</h6>
+          <div className="col-md-3 rounded purpllle pt-4">
+            <h7 className="text-white">Search and Save books from google</h7>
             <form>
               <div className="form-group">
                 <input
@@ -94,16 +93,16 @@ class Search extends Component {
                   value={this.state.bookSearch}
                   onChange={this.handleInputChange} />
               </div>
-              <Button onClick={this.handleFormSubmit}><h6>Search <FaSearch /></h6></Button>
-              <img src={im} alt="logo" style={{height: this.state.books.length*5}} onChange={this.handleInputChange} />
+             <div className="pb-1"> <Button onClick={this.handleFormSubmit}><h6 className="font-small font-weight-bold">Search <FaSearch /></h6></Button></div>
+            {/*   <img src={im} alt="logo" style={{height: this.state.books.length*5}} onChange={this.handleInputChange} /> */}
             </form>
           </div>
-          <div className="col-md-9 rounded purplle pt-4 ">
+          <div className="col-md-9 rounded savedcolor pt-4 ">
             {this.state.searched === "" ? (
-            <h5  className="text-white">Results</h5>
+            <h5  className="text-white font-weight-bold">Results</h5>
             
             ) : (
-              <h5 className="bg-dark text-warning">Results for {this.state.searched}</h5>
+              <h6 className="text-warning row pl-4 font-weight-bold">Results for <p className="text-white pl-1">{this.state.searched}</p></h6>
             )}
             {!this.state.books.length ? (
               <h6 className="text-center text-white">No books to display currently</h6>

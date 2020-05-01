@@ -26,7 +26,7 @@ const Dashboard = ({
         <div className="pb-5">
       <h5 className='text-white pl-2 pt-3'>Information about Members</h5>
       <h6 className='text-white pl-2'>
-       Welcome <span className="text-success h3">{user && user.name}</span> to <span className="text-warning handwrit">BookLook</span>
+       Welcome <span className="text-success h3">{user && user.name}</span> to <span className="text-warning">BookLook</span>
       </h6>
       </div>
       {profile !== null ? (

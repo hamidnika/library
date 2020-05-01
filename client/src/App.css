@@ -1034,7 +1034,9 @@ button {
   min-width: 100px;
   color: white;
 }
-
+.savedcolor {
+  background-color: #b19dae;
+}
 
 /* BookList Styles */
 .list {

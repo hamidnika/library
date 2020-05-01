@@ -37,8 +37,8 @@ class Saved extends Component {
     return (
       <div>
         <Row>
-          <div className="col-md-12 border border-rounded bg-secondary">
-          <h6 className="col-md-12 rounded purplle text-white p-2">Saved Books <FaRegSave /></h6>
+          <div className="col-md-12 rounded savedcolor">
+          <div className="p-2"><h6 className="col-md-12 rounded purpllle text-white p-2">Saved Books <FaRegSave /></h6></div>
             {!this.state.savedBooks.length ? (
               <h6 className="text-center text-white">No books to display currently</h6>
             ) : (
