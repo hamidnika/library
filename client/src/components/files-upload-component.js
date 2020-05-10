@@ -21,9 +21,9 @@ export default class FilesUploadComponent extends Component {
         e.preventDefault()
         const formData = new FormData()
         formData.append('profileImg', this.state.profileImg)
-        axios.post("http://localhost:5000/apimages/user-profile", formData, {
-        }).then(res => {
-            console.log(res)
+        axios.post("http://localhost:5000/apimages/user-profile", formData).then(res => {
+            console.log("post image"+res)
+           
         })
     }
 

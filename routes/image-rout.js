@@ -33,12 +33,12 @@ let Userimage = require('../models/image.js');
 
 router.post('/user-profile', upload.single('profileImg'), (req, res, next) => {
     const url = req.protocol + '://' + req.get('host')
-    const user = new Userimage({
+    const Userr = new Userimage({
         _id: new mongoose.Types.ObjectId(),
         name: req.body.name,
         profileImg: url + '/public/' + req.file.filename
     });
-    user.save().then(result => {
+    Userr.save().then(result => {
         res.status(201).json({
             message: "User registered successfully!",
             userCreated: {
@@ -54,13 +54,20 @@ router.post('/user-profile', upload.single('profileImg'), (req, res, next) => {
     })
 })
 
-router.get("/", (req, res, next) => {
-    User.find().then(data => {
+/* router.get("/", (req, res, next) => {
+    Userimage.find().then(data => {
         res.status(200).json({
             message: "User list retrieved successfully!",
-            users: data
+            userss: data
         });
     });
+}); */
+
+router.get('/user-profile/:id', (req, res) => {
+    Userr.findById(req.params.id)
+    .then(image => res.json(image))
+    .catch(err => res.status(404).json({ noimagefound: "No Image found" }));
 });
+
 
 module.exports = router;

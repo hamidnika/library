@@ -34,7 +34,7 @@ app.use("/api/profile", require("./routes/api/profile"));
 app.use('/api/bookss', require('./routes/api/books'));
 app.use("/api", apiRoutes);
 app.use('/public', express.static('public'));
-app.use('/apimages', require('./routes/image-rout.js'));
+app.use('/apimages', require('./routes/image-rout'));
 
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));

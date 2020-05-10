@@ -37,7 +37,8 @@ import UpdateBookInfo from './components/addbk/UpdateBookInfo';
 
 import FilesUploadComponent from './components/files-upload-component';
 
-import ScrollToTop from './ScrollToTop'
+import ScrollToTop from './ScrollToTop';
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -61,8 +62,6 @@ const App = () => {
      <Alert /> 
     <Switch>
     <Route exact path='/upload' component={FilesUploadComponent} />
-
-
     <Route exact path='/bk' component={ShowBookList} />
     <Route exact path='/archive' component={Archive} />
     <PrivateRoute path='/create-book' component={CreateBook} />

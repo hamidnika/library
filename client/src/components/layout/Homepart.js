@@ -5,7 +5,7 @@ export default class Homepart extends Component {
     render() {
         return (
             <div>
-              <div className="p-2 bg-secondary rounded">
+              <div className="p-1 bg-secondary rounded">
                  <div className="row">
         <div className="col-md-3">
         <div className="card bg-secondary rounded">
@@ -65,7 +65,18 @@ export default class Homepart extends Component {
       </div>
 
       <div className="row">
-          <div className="col-md-4">
+
+      <div className="col-md-3">
+        	<div className="card bg-secondary text-white mt-2">
+          <div className="card-body">
+          <p className="p-1"><a href="https://searchpart.herokuapp.com/jobdata" className="btn bg-dark text-white font-smallnormal font-weight-bold">Insert Data of Jobs and Services in Germany<h4><FaRegSave /></h4> and also you can Search inside Archive<h4><FaSearch /></h4></a></p>
+
+                  
+          </div>
+				</div>
+        </div>
+
+          <div className="col-md-3">
         <div className="card bg-secondary rounded mt-2 container">
           
             <div className="card-body">
@@ -77,7 +88,7 @@ export default class Homepart extends Component {
             </div>
           </div>
         </div>
-      <div className="col-md-4">
+      <div className="col-md-3">
 <div className="card bg-secondary rounded mt-2">
   <div className="card-body">
   <p className="bg-secondary p-2 text-white font-weight-bold text-center">We Will have Live Streaming <i class="fas fa-tv"></i></p>
@@ -87,7 +98,9 @@ export default class Homepart extends Component {
 </div>
 </div>
 
-        <div className="col-md-4">
+       
+
+        <div className="col-md-3">
         	<div className="card bg-secondary text-white mt-2">
           <div className="card-body">
           <p className="p-1"><Link to="/search" className="btn bg-dark text-white font-smallnormal font-weight-bold">Search and Save Books from GoogleBooks<h4><FaSearch /></h4></Link></p>
@@ -96,6 +109,7 @@ export default class Homepart extends Component {
           </div>
 				</div>
         </div>
+
       </div>
       </div>
       </div>

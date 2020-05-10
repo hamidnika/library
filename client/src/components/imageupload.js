@@ -6,47 +6,50 @@ import axios from 'axios';
 /* import FileUpload from './FileUpload'; */
 
 class Imageupload extends Component {
- 
-   state = {
-      images: []
+  constructor(props) {
+    super(props);
+    this.state = {
+      profileImg: ''
     };
- 
+  };
+  
+  arrayBufferToBase64(buffer) {
+    var binary = '';
+    var bytes = [].slice.call(new Uint8Array(buffer));
+    bytes.forEach((b) => binary += String.fromCharCode(b));
+    return window.btoa(binary);
+};
 
   componentDidMount() {
     axios
       .get('http://localhost:5000/apimages/user-profile')
-      .then(res => {
-          console.log(res.data.user)
+      .then(res => res.json())
+      .then((data) => {
+       
+          var base64Flag = 'data:image/jpeg;base64,';
+          var imageStr =
+              this.arrayBufferToBase64(data.image.data.data);
+
         this.setState({
-          images: res.data
+          profileImg: base64Flag + imageStr
         })
       })
       .catch(err =>{
-        console.log('Error from ShowBookList');
+        console.log('Error from ShowimageList');
       })
   };
 
  
   render() {
     
-    const image = this.state.images;
-    console.log("PrintBook: " + image);
-   
-
-   
-   
+    const profileImg = this.state;
+    console.log("PrintBook: " + profileImg);
+ 
     return (
       
-      <div className="ShowBookList contain rounded">
+      <div>
     
-        
-
-          <div className="row">
-          <div className="list">
-        
-          <img src={this.state.images} alt='image of house' />
-          </div>
-          </div>    
+    <img src={profileImg} style={{height:'auto', width:245 }} className="img-responsive" alt='Helpfultext'/> 
       </div>
     );
   }
