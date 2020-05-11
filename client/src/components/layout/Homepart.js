@@ -68,8 +68,9 @@ export default class Homepart extends Component {
 
       <div className="col-md-3">
         	<div className="card bg-secondary text-white mt-2">
-          <div className="card-body">
-          <p className="p-1"><a href="https://searchpart.herokuapp.com/jobdata" className="btn bg-dark text-white font-smallnormal font-weight-bold">Insert Data of Jobs and Services in Germany<h4><FaRegSave /></h4> and also you can Search inside Archive<h4><FaSearch /></h4></a></p>
+          <div className="card-body p-1">
+          <img src={require('./jobs.jpg')} className="img-fluid responsive rounded pl-1" alt="asso"/>
+          <p className="p-0 m-0"><a href="https://searchpart.herokuapp.com/jobdata" className="btn bg-dark text-white font-smallnormal font-weight-bold">Insert Data of Jobs and Services in Germany and Search inside DataBank</a></p>
 
                   
           </div>
@@ -77,17 +78,18 @@ export default class Homepart extends Component {
         </div>
 
           <div className="col-md-3">
-        <div className="card bg-secondary rounded mt-2 container">
+        <div className="card bg-secondary rounded mt-2">
           
             <div className="card-body">
           
-            <Link to="./gallery"><img src={require('../../img/gallery.jpg')} className="img-fluid resp rounded p-0" alt="pic"/>
+            <Link to="./gallery"><img src={require('../../img/gallery.jpg')} className="img-fluid rounded p-0" alt="pic"/>
               <p className="btn bg-secondary text-white font-weight-bold p-0">Gallery of Persian Events</p></Link>
             
               
             </div>
           </div>
         </div>
+
       <div className="col-md-3">
 <div className="card bg-secondary rounded mt-2">
   <div className="card-body">
@@ -103,8 +105,8 @@ export default class Homepart extends Component {
         <div className="col-md-3">
         	<div className="card bg-secondary text-white mt-2">
           <div className="card-body">
-          <p className="p-1"><Link to="/search" className="btn bg-dark text-white font-smallnormal font-weight-bold">Search and Save Books from GoogleBooks<h4><FaSearch /></h4></Link></p>
-          <p className="p-1"><Link to="/saved" className="btn bg-dark text-white font-smallnormal font-weight-bold">See SavedBooks by Users from GoogleBooks<h4><FaRegSave /></h4></Link></p>
+          <p><Link to="/search" className="btn bg-dark text-white font-smallnormal font-weight-bold">Search and Save Books from GoogleBooks<h5><FaSearch /></h5></Link></p>
+          <p><Link to="/saved" className="btn bg-dark text-white font-smallnormal font-weight-bold">See SavedBooks by Users from GoogleBooks<h5><FaRegSave /></h5></Link></p>
                   
           </div>
 				</div>

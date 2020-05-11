@@ -63,6 +63,13 @@ router.post("/", (req, res) => {
     .catch(err => res.status(400).json({ error: "Unable to add this book" }));
 });
 
+
+router.post("/search-data", function(req, res, next) {
+  const regex = new RegExp(escapeRegex(req.body.word), 'gi')
+  UserData.find({ description: regex }).then(function(doc) {
+    res.render("index", { itemss: doc });
+  });
+});
 // @route GET api/books/:id
 // @description Update book
 // @access Public
