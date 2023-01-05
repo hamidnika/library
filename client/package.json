@@ -32,7 +32,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "semantic-ui-react": "^0.88.2",
-    "simple-flexbox": "^2.3.0",
+    "simple-flexbox": "^2.3.3",
     "styletron-react": "^5.2.6",
     "uuid": "^3.3.3"
   },
